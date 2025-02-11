@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<title>Sodilot Portefeuille</title>
+<link rel="icon" type="image/png" href="icon-idee.png" />
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h2 {
+  margin-left: 20px;
+  line-height:20px;
+}
+h3 {
+  margin-left: 40px;
+  line-height:20px;
+}
+h4 {
+  margin-left: 60px;
+  line-height:16px;
+}
+h5 {
+  margin-left: 100px;
+  line-height:14px;
+}
+h6 {
+  margin-left: 120px;
+  line-height:12px;
+}
+</style>
+</head>
+<script> 
+function getParams() {
+    var idx = document.URL.indexOf('?');
+    var params = new Array();
+    if (idx != -1) {
+        var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+        for (var i=0; i<pairs.length; i++) {
+            nameVal = pairs[i].split('=');
+            params[nameVal[0]] = nameVal[1];
+        }
+    }
+    return params;
+}
+</script> 
+
+<button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
+<button                 onclick="history.back()">Back to Previous Page</button>
+<body onload="MyOnLoadFunction();" style="background-color:white;">
+<h1> Sodilot: Date=2023.12.31 - Generated: Tue Feb 11 13:01:02 CET 2025 </h1>
+<p> </p>
+<a id="31/12/2023"> </a>
+<h3> Valorisation au 31/12/2023 </h3>
+<table   style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="background-color:black;color:white;border-style:solid;">Code Isin</td>
+        <td style="background-color:black;color:white;border-style:solid;">Valeur</td>
+        <td style="background-color:black;color:white;border-style:solid;">Quantite</td>
+        <td style="background-color:black;color:white;border-style:solid;">Prix de revient en EUR</td>
+        <td style="background-color:black;color:white;border-style:solid;">Cours</td>
+        <td style="background-color:black;color:white;border-style:solid;">Valorisation en EUR</td>
+        <td style="background-color:black;color:white;border-style:solid;">VerifValue</td>
+        <td style="background-color:black;color:white;border-style:solid;">+/- Value latente en EUR</td>
+        <td style="background-color:black;color:white;border-style:solid;">VerifPV</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=FR0010208488" >FR0010208488</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">ENGIE</td>
+        <td style="text-align:right;border-style:solid;">5 434.0000</td>
+        <td style="text-align:right;border-style:solid;">12.08</td>
+        <td style="text-align:right;border-style:solid;">15.9180</td>
+        <td style="text-align:right;border-style:solid;">86 498.41</td>
+        <td style="text-align:right;border-style:solid;">86 498.41</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">20 855.69</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">20 855.69</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=XS2324808158" >XS2324808158</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">EMTNLA AT KER 04/26</td>
+        <td style="text-align:right;border-style:solid;">6.0000</td>
+        <td style="text-align:right;border-style:solid;">10 000.00</td>
+        <td style="text-align:right;border-style:solid;">75.1045</td>
+        <td style="text-align:right;border-style:solid;">45 062.69</td>
+        <td style="text-align:right;border-style:solid;">45 062.69</td>
+        <td style="background-color:red;color:white;text-align:right;border-style:solid;">-14 937.31</td>
+        <td style="background-color:red;color:white;text-align:right;border-style:solid;">-14 937.31</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=FR0013084357" >FR0013084357</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">M CONVERTIBLES IC SI.3DEC</td>
+        <td style="text-align:right;border-style:solid;">363.3870</td>
+        <td style="text-align:right;border-style:solid;">538.68</td>
+        <td style="text-align:right;border-style:solid;">564.1500</td>
+        <td style="text-align:right;border-style:solid;">205 004.78</td>
+        <td style="text-align:right;border-style:solid;">205 004.78</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">9 255.47</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">9 255.47</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU1694789709" >LU1694789709</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">DNCA INVEST ALPHA BONDS N 4DEC</td>
+        <td style="text-align:right;border-style:solid;">1 367.6128</td>
+        <td style="text-align:right;border-style:solid;">119.49</td>
+        <td style="text-align:right;border-style:solid;">121.2700</td>
+        <td style="text-align:right;border-style:solid;">165 850.40</td>
+        <td style="text-align:right;border-style:solid;">165 850.40</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">2 434.35</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">2 434.35</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=FR001400HKD7" >FR001400HKD7</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">EMTNLA AT SX7E 06 28</td>
+        <td style="text-align:right;border-style:solid;">100.0000</td>
+        <td style="text-align:right;border-style:solid;">1 000.00</td>
+        <td style="text-align:right;border-style:solid;">107.1034</td>
+        <td style="text-align:right;border-style:solid;">107 103.43</td>
+        <td style="text-align:right;border-style:solid;">107 103.43</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">7 103.43</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">7 103.43</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=FR0014009YN8" >FR0014009YN8</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">EMTNLA AT FT SX5E 06/30</td>
+        <td style="text-align:right;border-style:solid;">50.0000</td>
+        <td style="text-align:right;border-style:solid;">1 000.00</td>
+        <td style="text-align:right;border-style:solid;">108.2518</td>
+        <td style="text-align:right;border-style:solid;">54 125.90</td>
+        <td style="text-align:right;border-style:solid;">54 125.90</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">4 125.90</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">4 125.90</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU0211340665" >LU0211340665</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">BL GLOBAL FLEXIBLE EUR (B)</td>
+        <td style="text-align:right;border-style:solid;">1 089.8540</td>
+        <td style="text-align:right;border-style:solid;">172.71</td>
+        <td style="text-align:right;border-style:solid;">195.0700</td>
+        <td style="text-align:right;border-style:solid;">212 597.82</td>
+        <td style="text-align:right;border-style:solid;">212 597.82</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">24 370.64</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">24 370.64</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU0893376748" >LU0893376748</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">CIGOGNE UCITS - M&A ARBITRAGE (C2)</td>
+        <td style="text-align:right;border-style:solid;">437.2334</td>
+        <td style="text-align:right;border-style:solid;">1 178.56</td>
+        <td style="text-align:right;border-style:solid;">1 217.1500</td>
+        <td style="text-align:right;border-style:solid;">532 178.63</td>
+        <td style="text-align:right;border-style:solid;">532 178.63</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">16 872.83</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">16 872.83</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=FR0013297140" >FR0013297140</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM OBLI PAYS EMERGENTS (S)</td>
+        <td style="text-align:right;border-style:solid;">1 185.9500</td>
+        <td style="text-align:right;border-style:solid;">101.43</td>
+        <td style="text-align:right;border-style:solid;">110.5700</td>
+        <td style="text-align:right;border-style:solid;">131 130.49</td>
+        <td style="text-align:right;border-style:solid;">131 130.49</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">10 839.58</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">10 839.58</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU0912261541" >LU0912261541</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">HELIUM EUR CL.A CAPITALISATION</td>
+        <td style="text-align:right;border-style:solid;">289.4610</td>
+        <td style="text-align:right;border-style:solid;">1 646.88</td>
+        <td style="text-align:right;border-style:solid;">1 853.3870</td>
+        <td style="text-align:right;border-style:solid;">536 483.25</td>
+        <td style="text-align:right;border-style:solid;">536 483.25</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">59 776.45</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">59 776.45</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU0912262275" >LU0912262275</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">HELIUM PERFORM.B C EUR SI.3DEC</td>
+        <td style="text-align:right;border-style:solid;">398.9520</td>
+        <td style="text-align:right;border-style:solid;">1 216.47</td>
+        <td style="text-align:right;border-style:solid;">1 357.0610</td>
+        <td style="text-align:right;border-style:solid;">541 402.20</td>
+        <td style="text-align:right;border-style:solid;">541 402.20</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">56 091.03</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">56 091.03</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=IE00BD5VYW86" >IE00BD5VYW86</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">LAZ.EUR.ALT.FD EURO RET.EURC3D</td>
+        <td style="text-align:right;border-style:solid;">2 924.4330</td>
+        <td style="text-align:right;border-style:solid;">102.58</td>
+        <td style="text-align:right;border-style:solid;">115.5957</td>
+        <td style="text-align:right;border-style:solid;">338 051.88</td>
+        <td style="text-align:right;border-style:solid;">338 051.88</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">38 051.85</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">38 051.85</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=FR0010400762" >FR0010400762</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">MONETA LONG SHORT A FCP 4DEC</td>
+        <td style="text-align:right;border-style:solid;">1 524.2365</td>
+        <td style="text-align:right;border-style:solid;">175.43</td>
+        <td style="text-align:right;border-style:solid;">198.4300</td>
+        <td style="text-align:right;border-style:solid;">302 454.25</td>
+        <td style="text-align:right;border-style:solid;">302 454.25</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">35 057.44</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">35 057.44</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU0384367917" >LU0384367917</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">SELECTION F - SMART EVOLUTION (C)</td>
+        <td style="text-align:right;border-style:solid;">310.1660</td>
+        <td style="text-align:right;border-style:solid;">1 289.13</td>
+        <td style="text-align:right;border-style:solid;">1 622.5300</td>
+        <td style="text-align:right;border-style:solid;">503 253.64</td>
+        <td style="text-align:right;border-style:solid;">503 253.64</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">103 408.65</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">103 408.65</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU0384368212" >LU0384368212</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">SELECTION F - ALPHA (C)</td>
+        <td style="text-align:right;border-style:solid;">381.9130</td>
+        <td style="text-align:right;border-style:solid;">1 182.73</td>
+        <td style="text-align:right;border-style:solid;">1 413.3200</td>
+        <td style="text-align:right;border-style:solid;">539 765.28</td>
+        <td style="text-align:right;border-style:solid;">539 765.28</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">88 063.91</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">88 063.91</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU0648565538" >LU0648565538</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">STORK FUND - DYNAMIC MULTI-STRA (O)</td>
+        <td style="text-align:right;border-style:solid;">72.7902</td>
+        <td style="text-align:right;border-style:solid;">12 635.17</td>
+        <td style="text-align:right;border-style:solid;">15 646.9000</td>
+        <td style="text-align:right;border-style:solid;">1 138 940.98</td>
+        <td style="text-align:right;border-style:solid;">1 138 940.98</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">219 224.44</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">219 224.44</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=IE00B4PTJ249" >IE00B4PTJ249</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">MUZ.SH.DUR.H.YIELD ACC.R 3DEC</td>
+        <td style="text-align:right;border-style:solid;">1 346.7950</td>
+        <td style="text-align:right;border-style:solid;">116.98</td>
+        <td style="text-align:right;border-style:solid;">142.9300</td>
+        <td style="text-align:right;border-style:solid;">173 796.87</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">192 497.41</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">16 246.98</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">16 246.98</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU2358390321" >LU2358390321</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">VARENNE VALEUR PC EUR 3DEC</td>
+        <td style="text-align:right;border-style:solid;">1 389.6860</td>
+        <td style="text-align:right;border-style:solid;">131.80</td>
+        <td style="text-align:right;border-style:solid;">143.3500</td>
+        <td style="text-align:right;border-style:solid;">199 211.49</td>
+        <td style="text-align:right;border-style:solid;">199 211.49</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">16 050.88</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">16 050.88</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU1160355373" >LU1160355373</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">EDR FD-GLOBAL CONVERT.IEURC.3D</td>
+        <td style="text-align:right;border-style:solid;">1 148.5100</td>
+        <td style="text-align:right;border-style:solid;">147.16</td>
+        <td style="text-align:right;border-style:solid;">154.8500</td>
+        <td style="text-align:right;border-style:solid;">177 846.77</td>
+        <td style="text-align:right;border-style:solid;">177 846.77</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">8 832.04</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">8 832.04</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU1697917240" >LU1697917240</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">FFG GLOB.FLEX.SUST.C ACC EUR3D</td>
+        <td style="text-align:right;border-style:solid;">1 531.5670</td>
+        <td style="text-align:right;border-style:solid;">112.30</td>
+        <td style="text-align:right;border-style:solid;">120.1200</td>
+        <td style="text-align:right;border-style:solid;">183 971.83</td>
+        <td style="text-align:right;border-style:solid;">183 971.83</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">11 976.86</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">11 976.86</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=FR0013353828" >FR0013353828</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM CASH ISR (RC)</td>
+        <td style="text-align:right;border-style:solid;">11.5306</td>
+        <td style="text-align:right;border-style:solid;">51 714.41</td>
+        <td style="text-align:right;border-style:solid;">52 977.3500</td>
+        <td style="text-align:right;border-style:solid;">610 862.43</td>
+        <td style="text-align:right;border-style:solid;">610 862.43</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">14 562.50</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">14 562.50</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=FR0014005MG5" >FR0014005MG5</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM HIGH YIELD 2026 (S)</td>
+        <td style="text-align:right;border-style:solid;">2 159.3160</td>
+        <td style="text-align:right;border-style:solid;">107.80</td>
+        <td style="text-align:right;border-style:solid;">110.5600</td>
+        <td style="text-align:right;border-style:solid;">238 733.98</td>
+        <td style="text-align:right;border-style:solid;">238 733.98</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">5 958.20</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">5 958.20</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=LU2049492049" >LU2049492049</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">EXANE PLEIADE FUND S EUR C.4D.</td>
+        <td style="text-align:right;border-style:solid;">45.6551</td>
+        <td style="text-align:right;border-style:solid;">11 616.37</td>
+        <td style="text-align:right;border-style:solid;">11 816.3600</td>
+        <td style="text-align:right;border-style:solid;">539 477.10</td>
+        <td style="text-align:right;border-style:solid;">539 477.10</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">9 130.57</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">9 130.57</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=FR001400C2M2" >FR001400C2M2</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM OBLI IG 2025 (S)</td>
+        <td style="text-align:right;border-style:solid;">4 319.2430</td>
+        <td style="text-align:right;border-style:solid;">103.41</td>
+        <td style="text-align:right;border-style:solid;">105.4700</td>
+        <td style="text-align:right;border-style:solid;">455 550.56</td>
+        <td style="text-align:right;border-style:solid;">455 550.56</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">8 897.64</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">8 897.64</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"><a href="https://www.google.com/search?q=FR001400EO28" >FR001400EO28</a></td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM OBLI IG 2028 (S)</td>
+        <td style="text-align:right;border-style:solid;">6 870.9430</td>
+        <td style="text-align:right;border-style:solid;">103.36</td>
+        <td style="text-align:right;border-style:solid;">107.6600</td>
+        <td style="text-align:right;border-style:solid;">739 725.72</td>
+        <td style="text-align:right;border-style:solid;">739 725.72</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">29 547.04</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">29 547.04</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:black;color:white;border-style:solid;"></td>
+        <td style="background-color:black;color:white;border-style:solid;">Total</td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">8 759 080.78</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">8 777 781.32</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">801 797.06</td>
+        <td style="background-color:green;color:white;text-align:right;border-style:solid;">801 797.06</td>
+    </tr>
+</table>
+<a id="compta"> </a>
+<h3> Compta au 31/12/2023 </h3>
+<table   style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="background-color:black;color:white;border-style:solid;">Id</td>
+        <td style="background-color:black;color:white;border-style:solid;">Text</td>
+        <td style="background-color:black;color:white;border-style:solid;">Value</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;"></td>
+        <td style="background-color:grey;color:white;border-style:solid;">Date</td>
+        <td style="background-color:grey;color:white;border-style:solid;">31/12/2023</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">1</td>
+        <td style="border-style:solid;">Profits realises    [-K91-K94]</td>
+        <td style="text-align:right;border-style:solid;">210 499</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">2</td>
+        <td style="border-style:solid;">Pertes realisees    [-L91    ]</td>
+        <td style="text-align:right;border-style:solid;">-117 765</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">3</td>
+        <td style="border-style:solid;">Profits potentiels  [N84-Q84 ]</td>
+        <td style="text-align:right;border-style:solid;">816 734</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">4</td>
+        <td style="border-style:solid;">Pertes potentielles [Q84     ]</td>
+        <td style="text-align:right;border-style:solid;">-14 937</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">5</td>
+        <td style="border-style:solid;">Profits potentiels(N-1)</td>
+        <td style="text-align:right;border-style:solid;">582 632</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">6</td>
+        <td style="border-style:solid;">Pertes potentielles(N-1)</td>
+        <td style="text-align:right;border-style:solid;">-139 331</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">7</td>
+        <td style="border-style:solid;">Reprise Provision(N-1): (7)=-(6)</td>
+        <td style="text-align:right;border-style:solid;">139 331</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">8</td>
+        <td style="border-style:solid;">Dotation Provision    : (8)=-(4)</td>
+        <td style="text-align:right;border-style:solid;">14 937</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">9</td>
+        <td style="border-style:solid;">Resultat Realise  :  (9)=(1)+(2)</td>
+        <td style="text-align:right;border-style:solid;">92 733</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">10</td>
+        <td style="border-style:solid;">Resultat Comptable: (10)=(9)+(7)-(8)</td>
+        <td style="background-color:grey;color:white;text-align:right;border-style:solid;">217 128</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">11</td>
+        <td style="border-style:solid;">Resultat Fiscal   : (11)=(10)+(3)-(5)</td>
+        <td style="text-align:right;border-style:solid;">451 230</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">12</td>
+        <td style="border-style:solid;">Impot Societe     : (12)=28%</td>
+        <td style="text-align:right;border-style:solid;">126 344</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">13</td>
+        <td style="border-style:solid;">Resultat NET      : (13)=(10)-(12)</td>
+        <td style="background-color:grey;color:white;text-align:right;border-style:solid;">90 783</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">14</td>
+        <td style="border-style:solid;">Pertes reportables: (14)=</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">Date</td>
+        <td style="background-color:grey;color:white;border-style:solid;"></td>
+        <td style="background-color:grey;color:white;border-style:solid;">31/12/2023</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">76400000</td>
+        <td style="border-style:solid;">Revenus des VMP</td>
+        <td style="text-align:right;border-style:solid;">81 743</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">76700000</td>
+        <td style="border-style:solid;">Produits nets sur cession VMP</td>
+        <td style="text-align:right;border-style:solid;">128 755</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">79100100</td>
+        <td style="border-style:solid;">Repr provision VMP</td>
+        <td style="text-align:right;border-style:solid;">139 331</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">66700000</td>
+        <td style="border-style:solid;">Chges nettes sur cession VMP</td>
+        <td style="text-align:right;border-style:solid;">117 765</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">68665000</td>
+        <td style="border-style:solid;">Dotation provisions VMP</td>
+        <td style="text-align:right;border-style:solid;">14 937</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;">69810000</td>
+        <td style="border-style:solid;">Reintegration fiscale</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;"></td>
+        <td style="border-style:solid;">Resultat Realise</td>
+        <td style="text-align:right;border-style:solid;">92 733</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;"></td>
+        <td style="border-style:solid;">Resultat Comptable</td>
+        <td style="background-color:grey;color:white;text-align:right;border-style:solid;">217 128</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;"></td>
+        <td style="border-style:solid;">Resultat Fiscal</td>
+        <td style="text-align:right;border-style:solid;">451 230</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;"></td>
+        <td style="border-style:solid;">Impot Societe</td>
+        <td style="text-align:right;border-style:solid;">126 344</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;"></td>
+        <td style="border-style:solid;">Resultat NET</td>
+        <td style="background-color:grey;color:white;text-align:right;border-style:solid;">90 783</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="border-style:solid;"></td>
+        <td style="border-style:solid;">Pertes reportables</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+    </tr>
+</table>
+<a id="31/12/2023"> </a>
+<h3> Positions au 31/12/2023 </h3>
+<table   style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="background-color:black;color:white;border-style:solid;">Isin</td>
+        <td style="background-color:black;color:white;border-style:solid;">Symbol</td>
+        <td style="background-color:black;color:white;border-style:solid;">Date</td>
+        <td style="background-color:black;color:white;border-style:solid;">Quantity</td>
+        <td style="background-color:black;color:white;border-style:solid;">PriceAMP</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR0010208488</td>
+        <td style="background-color:grey;color:white;border-style:solid;">ENGIE</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">5 434.0000</td>
+        <td style="text-align:right;border-style:solid;">12.0800</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">XS2324808158</td>
+        <td style="background-color:grey;color:white;border-style:solid;">EMTNLA AT KER 04/26</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">6.0000</td>
+        <td style="text-align:right;border-style:solid;">10 000.0000</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR0013084357</td>
+        <td style="background-color:grey;color:white;border-style:solid;">M CONVERTIBLES IC SI.3DEC</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">363.3870</td>
+        <td style="text-align:right;border-style:solid;">538.6800</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU1694789709</td>
+        <td style="background-color:grey;color:white;border-style:solid;">DNCA INVEST ALPHA BONDS N 4DEC</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">1 367.6128</td>
+        <td style="text-align:right;border-style:solid;">119.4900</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR001400HKD7</td>
+        <td style="background-color:grey;color:white;border-style:solid;">EMTNLA AT SX7E 06 28</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">100.0000</td>
+        <td style="text-align:right;border-style:solid;">1 000.0000</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR0014009YN8</td>
+        <td style="background-color:grey;color:white;border-style:solid;">EMTNLA AT FT SX5E 06/30</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">50.0000</td>
+        <td style="text-align:right;border-style:solid;">1 000.0000</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0211340665</td>
+        <td style="background-color:grey;color:white;border-style:solid;">BL GLOBAL FLEXIBLE EUR (B)</td>
+        <td style="border-style:solid;">18/10/2023</td>
+        <td style="text-align:right;border-style:solid;">1 089.8540</td>
+        <td style="text-align:right;border-style:solid;">188.2700</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0893376748</td>
+        <td style="background-color:grey;color:white;border-style:solid;">CIGOGNE UCITS - M&A ARBITRAGE (C2)</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">437.2334</td>
+        <td style="text-align:right;border-style:solid;">1 178.5600</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR0013297140</td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM OBLI PAYS EMERGENTS (S)</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">1 185.9500</td>
+        <td style="text-align:right;border-style:solid;">101.4300</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0912261541</td>
+        <td style="background-color:grey;color:white;border-style:solid;">HELIUM EUR CL.A CAPITALISATION</td>
+        <td style="border-style:solid;">22/02/2017</td>
+        <td style="text-align:right;border-style:solid;">117.3050</td>
+        <td style="text-align:right;border-style:solid;">1 604.2730</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0912261541</td>
+        <td style="background-color:grey;color:white;border-style:solid;">HELIUM EUR CL.A CAPITALISATION</td>
+        <td style="border-style:solid;">08/09/2017</td>
+        <td style="text-align:right;border-style:solid;">92.2080</td>
+        <td style="text-align:right;border-style:solid;">1 626.6300</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0912261541</td>
+        <td style="background-color:grey;color:white;border-style:solid;">HELIUM EUR CL.A CAPITALISATION</td>
+        <td style="border-style:solid;">16/04/2021</td>
+        <td style="text-align:right;border-style:solid;">24.0570</td>
+        <td style="text-align:right;border-style:solid;">1 718.5800</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0912261541</td>
+        <td style="background-color:grey;color:white;border-style:solid;">HELIUM EUR CL.A CAPITALISATION</td>
+        <td style="border-style:solid;">24/06/2021</td>
+        <td style="text-align:right;border-style:solid;">55.8910</td>
+        <td style="text-align:right;border-style:solid;">1 748.0600</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0912262275</td>
+        <td style="background-color:grey;color:white;border-style:solid;">HELIUM PERFORM.B C EUR SI.3DEC</td>
+        <td style="border-style:solid;">06/10/2017</td>
+        <td style="text-align:right;border-style:solid;">263.8330</td>
+        <td style="text-align:right;border-style:solid;">1 195.3090</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0912262275</td>
+        <td style="background-color:grey;color:white;border-style:solid;">HELIUM PERFORM.B C EUR SI.3DEC</td>
+        <td style="border-style:solid;">21/04/2021</td>
+        <td style="text-align:right;border-style:solid;">58.1510</td>
+        <td style="text-align:right;border-style:solid;">1 243.3000</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0912262275</td>
+        <td style="background-color:grey;color:white;border-style:solid;">HELIUM PERFORM.B C EUR SI.3DEC</td>
+        <td style="border-style:solid;">24/06/2021</td>
+        <td style="text-align:right;border-style:solid;">76.9680</td>
+        <td style="text-align:right;border-style:solid;">1 268.7100</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">IE00BD5VYW86</td>
+        <td style="background-color:grey;color:white;border-style:solid;">LAZ.EUR.ALT.FD EURO RET.EURC3D</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">2 924.4330</td>
+        <td style="text-align:right;border-style:solid;">102.5840</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR0010400762</td>
+        <td style="background-color:grey;color:white;border-style:solid;">MONETA LONG SHORT A FCP 4DEC</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">1 524.2365</td>
+        <td style="text-align:right;border-style:solid;">175.4300</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0384367917</td>
+        <td style="background-color:grey;color:white;border-style:solid;">SELECTION F - SMART EVOLUTION (C)</td>
+        <td style="border-style:solid;">29/10/2012</td>
+        <td style="text-align:right;border-style:solid;">85.7510</td>
+        <td style="text-align:right;border-style:solid;">1 223.2300</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0384367917</td>
+        <td style="background-color:grey;color:white;border-style:solid;">SELECTION F - SMART EVOLUTION (C)</td>
+        <td style="border-style:solid;">28/02/2013</td>
+        <td style="text-align:right;border-style:solid;">120.3130</td>
+        <td style="text-align:right;border-style:solid;">1 247.9600</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0384367917</td>
+        <td style="background-color:grey;color:white;border-style:solid;">SELECTION F - SMART EVOLUTION (C)</td>
+        <td style="border-style:solid;">31/12/2015</td>
+        <td style="text-align:right;border-style:solid;">104.1020</td>
+        <td style="text-align:right;border-style:solid;">1 440.1900</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0384368212</td>
+        <td style="background-color:grey;color:white;border-style:solid;">SELECTION F - ALPHA (C)</td>
+        <td style="border-style:solid;">13/11/2013</td>
+        <td style="text-align:right;border-style:solid;">42.7170</td>
+        <td style="text-align:right;border-style:solid;">1 140.4000</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0384368212</td>
+        <td style="background-color:grey;color:white;border-style:solid;">SELECTION F - ALPHA (C)</td>
+        <td style="border-style:solid;">31/01/2015</td>
+        <td style="text-align:right;border-style:solid;">98.0700</td>
+        <td style="text-align:right;border-style:solid;">1 222.6800</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0384368212</td>
+        <td style="background-color:grey;color:white;border-style:solid;">SELECTION F - ALPHA (C)</td>
+        <td style="border-style:solid;">29/06/2016</td>
+        <td style="text-align:right;border-style:solid;">241.1260</td>
+        <td style="text-align:right;border-style:solid;">1 253.4300</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU0648565538</td>
+        <td style="background-color:grey;color:white;border-style:solid;">STORK FUND - DYNAMIC MULTI-STRA (O)</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">72.7902</td>
+        <td style="text-align:right;border-style:solid;">12 635.1698</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">IE00B4PTJ249</td>
+        <td style="background-color:grey;color:white;border-style:solid;">MUZ.SH.DUR.H.YIELD ACC.R 3DEC</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">1 346.7950</td>
+        <td style="text-align:right;border-style:solid;">116.9813</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU2358390321</td>
+        <td style="background-color:grey;color:white;border-style:solid;">VARENNE VALEUR PC EUR 3DEC</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">1 389.6860</td>
+        <td style="text-align:right;border-style:solid;">131.8000</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU1160355373</td>
+        <td style="background-color:grey;color:white;border-style:solid;">EDR FD-GLOBAL CONVERT.IEURC.3D</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">1 148.5100</td>
+        <td style="text-align:right;border-style:solid;">147.1600</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU1697917240</td>
+        <td style="background-color:grey;color:white;border-style:solid;">FFG GLOB.FLEX.SUST.C ACC EUR3D</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">1 531.5670</td>
+        <td style="text-align:right;border-style:solid;">112.3000</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR0013353828</td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM CASH ISR (RC)</td>
+        <td style="border-style:solid;">30/12/2022</td>
+        <td style="text-align:right;border-style:solid;">4.9244</td>
+        <td style="text-align:right;border-style:solid;">51 234.4291</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR0013353828</td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM CASH ISR (RC)</td>
+        <td style="border-style:solid;">27/06/2023</td>
+        <td style="text-align:right;border-style:solid;">5.5462</td>
+        <td style="text-align:right;border-style:solid;">51 927.4703</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR0013353828</td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM CASH ISR (RC)</td>
+        <td style="border-style:solid;">08/12/2023</td>
+        <td style="text-align:right;border-style:solid;">1.0600</td>
+        <td style="text-align:right;border-style:solid;">52 829.4411</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR0014005MG5</td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM HIGH YIELD 2026 (S)</td>
+        <td style="border-style:solid;">13/10/2023</td>
+        <td style="text-align:right;border-style:solid;">1 061.2200</td>
+        <td style="text-align:right;border-style:solid;">106.2700</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR0014005MG5</td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM HIGH YIELD 2026 (S)</td>
+        <td style="border-style:solid;">08/12/2023</td>
+        <td style="text-align:right;border-style:solid;">1 098.0960</td>
+        <td style="text-align:right;border-style:solid;">109.2800</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">LU2049492049</td>
+        <td style="background-color:grey;color:white;border-style:solid;">EXANE PLEIADE FUND S EUR C.4D.</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">45.6551</td>
+        <td style="text-align:right;border-style:solid;">11 616.3699</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR001400C2M2</td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM OBLI IG 2025 (S)</td>
+        <td style="border-style:solid;">31/12/2023</td>
+        <td style="text-align:right;border-style:solid;">4 319.2430</td>
+        <td style="text-align:right;border-style:solid;">103.4100</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR001400EO28</td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM OBLI IG 2028 (S)</td>
+        <td style="border-style:solid;">13/10/2023</td>
+        <td style="text-align:right;border-style:solid;">4 418.9890</td>
+        <td style="text-align:right;border-style:solid;">102.1000</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:grey;color:white;border-style:solid;">FR001400EO28</td>
+        <td style="background-color:grey;color:white;border-style:solid;">CM-AM OBLI IG 2028 (S)</td>
+        <td style="border-style:solid;">08/12/2023</td>
+        <td style="text-align:right;border-style:solid;">2 451.9540</td>
+        <td style="text-align:right;border-style:solid;">105.6300</td>
+    </tr>
+</table>
+</body>
+<script> 
+function MyOnLoadFunction() {
+}
+</script> 
+</html>
