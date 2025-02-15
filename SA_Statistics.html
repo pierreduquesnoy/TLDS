@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<title>Statistiques</title>
+<link rel="icon" type="image/png" href="icon-idee.png" />
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h2 {
+  margin-left: 20px;
+  line-height:20px;
+}
+h3 {
+  margin-left: 40px;
+  line-height:20px;
+}
+h4 {
+  margin-left: 60px;
+  line-height:16px;
+}
+h5 {
+  margin-left: 100px;
+  line-height:14px;
+}
+h6 {
+  margin-left: 120px;
+  line-height:12px;
+}
+</style>
+</head>
+<script> 
+function getParams() {
+    var idx = document.URL.indexOf('?');
+    var params = new Array();
+    if (idx != -1) {
+        var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+        for (var i=0; i<pairs.length; i++) {
+            nameVal = pairs[i].split('=');
+            params[nameVal[0]] = nameVal[1];
+        }
+    }
+    return params;
+}
+</script> 
+
+<button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
+<button                 onclick="history.back()">Back to Previous Page</button>
+<body onload="MyOnLoadFunction();" style="background-color:Lavender;">
+<h1> Statistiques - Generated: Sat Feb 15 08:16:30 CET 2025 </h1>
+<p> </p>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+<head>
+<title>Statistics</title>
+<link rel="icon" type="image/png" href="icon-idee.png" />
+<style>
+.charts{
+display:inline;
+}
+.folders{
+height: 150px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: space-around;
+text-align: center;
+background-color: #efefef;
+}
+
+.folder {
+flex-shrink: 0;
+padding: 10px 0;
+background-color: #1abc9c;
+}
+</style>
+</head>
+<body>
+<div class="folders">
+<div
+id="MyChart1" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart2" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart3" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart4" class="folder" style="flex-basis: 50%">
+</div>
+</div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawCallback);
+
+function drawCallback() {
+
+// Set Data
+var data1 = new google.visualization.DataTable();
+data1.addColumn('date', 'Date');
+data1.addColumn('number', 'Valorisation');
+
+data1.addRows([
+[new Date(2020, 11, 31), 7221727.76, ],
+[new Date(2021, 11, 31), 8221356.35, ],
+[new Date(2022, 11, 31), 8463211.56, ],
+[new Date(2023, 11, 31), 8759080.78, ],
+[new Date(2024, 11, 31), 9209996.16, ],
+[new Date(2025, 1, 11), 9318605.232578, ],
+[new Date(2025, 1, 12), 9324023.92523532, ],
+[new Date(2025, 1, 13), 9328580.55513332, ],
+[new Date(2025, 1, 14), 9328659.208169, ],
+[new Date(2025, 1, 15), 9330309.05665052, ],
+]);
+
+// Set Options
+var options1 = {
+title: 'Portefeuille: Valorisation',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+format: 'd/M/yy',
+gridlines: {count: 15},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data2 = new google.visualization.DataTable();
+data2.addColumn('date', 'Date');
+data2.addColumn('number', 'Pnl');
+
+data2.addRows([
+[new Date(2020, 11, 31), 627917.28, ],
+[new Date(2021, 11, 31), 835494.29, ],
+[new Date(2022, 11, 31), 464785.47, ],
+[new Date(2023, 11, 31), 801797.06, ],
+[new Date(2024, 11, 31), 906408.48, ],
+[new Date(2025, 1, 11), 1015017.552578, ],
+[new Date(2025, 1, 12), 1020436.24523532, ],
+[new Date(2025, 1, 13), 1024992.87513332, ],
+[new Date(2025, 1, 14), 1025071.528169, ],
+[new Date(2025, 1, 15), 1026721.37665052, ],
+]);
+
+// Set Options
+var options2 = {
+title: 'Portefeuille: +/- Value',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+format: 'd/M/yy',
+gridlines: {count: 15},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data3 = new google.visualization.DataTable();
+data3.addColumn('number', 'Month');
+data3.addColumn('number', '2021');
+data3.addColumn('number', '2022');
+data3.addColumn('number', '2023');
+data3.addColumn('number', '2024');
+
+data3.addRows([
+[ 0, , , , -14297, ],
+[ 5, , 612590, 386631, 583231, ],
+[ 6, , 678239, 583979, 657269, ],
+[ 7, 552804, 307618, 162642, 154616, ],
+[ 8, , 853442, 556912, 609875, ],
+[ 9, , 890033, 644652, 607751, ],
+[ 10, , , 618101, 567250, ],
+[ 11, 418762, 362725, 144618, , ],
+]);
+
+// Set Options
+var options3 = {
+title: 'Resultat',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+gridlines: {count: 12},
+ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data4 = new google.visualization.DataTable();
+data4.addColumn('number', 'Month');
+data4.addColumn('number', '2021');
+data4.addColumn('number', '2022');
+data4.addColumn('number', '2023');
+data4.addColumn('number', '2024');
+
+data4.addRows([
+[ 0, , , , 62274, ],
+[ 5, , 905291, 868330, 856841, ],
+[ 6, , 1079913, 1141741, 1029834, ],
+[ 7, 829948, 830879, 891917, 650267, ],
+[ 8, , 1333521, 1246050, 1099132, ],
+[ 9, , 1472319, 1389752, 1202536, ],
+[ 10, , , 1454656, 1263374, ],
+[ 11, 1058852, 1238827, 1036425, , ],
+]);
+
+// Set Options
+var options4 = {
+title: 'EBE',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+gridlines: {count: 12},
+ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+// Draw
+const chart1 = new google.visualization.LineChart(document.getElementById('MyChart1'));
+chart1.draw(data1, options1);
+const chart2 = new google.visualization.LineChart(document.getElementById('MyChart2'));
+chart2.draw(data2, options2);
+const chart3 = new google.visualization.LineChart(document.getElementById('MyChart3'));
+chart3.draw(data3, options3);
+const chart4 = new google.visualization.LineChart(document.getElementById('MyChart4'));
+chart4.draw(data4, options4);
+
+}
+</script>
+
+</body>
+<script> 
+function MyOnLoadFunction() {
+}
+</script> 
+</html>
+
