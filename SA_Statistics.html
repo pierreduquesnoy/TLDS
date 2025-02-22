@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Sat Feb 22 09:21:02 CET 2025 </h1>
+<h1> Statistiques - Generated: Sat Feb 22 09:21:56 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -86,7 +86,7 @@ background-color: #1abc9c;
 <body>
 <div class="folders">
 <div
-id="MyChart1" class="folder" style="flex-basis: 50%">
+id="MyChart1" class="folder" style="flex-basis: 100%">
 </div>
 <div
 id="MyChart2" class="folder" style="flex-basis: 50%">
@@ -98,7 +98,7 @@ id="MyChart3" class="folder" style="flex-basis: 50%">
 id="MyChart4" class="folder" style="flex-basis: 50%">
 </div>
 <div
-id="MyChart5" class="folder" style="flex-basis: 100%">
+id="MyChart5" class="folder" style="flex-basis: 50%">
 </div>
 </div>
 
@@ -110,10 +110,110 @@ function drawCallback() {
 
 // Set Data
 var data1 = new google.visualization.DataTable();
-data1.addColumn('date', 'Date');
-data1.addColumn('number', 'Valorisation');
+data1.addColumn('number', 'Month');
+data1.addColumn('number', '2021');
+data1.addColumn('number', '2022');
+data1.addColumn('number', '2023');
+data1.addColumn('number', '2024');
 
 data1.addRows([
+[ 0, 1172707.7, 1186268.57, 1281506.6, 1031708.12, ],
+[ 1, 1178671.27, 1126884.2, 1243145.26, 1058793, ],
+[ 2, 1313084.75, 1435819.96, 1416285.96, 1159429.52, ],
+[ 3, 1422010.94, 1456440.69, 1336536.46, 1199426.53, ],
+[ 4, 1333200.06, 1434532.79, 1293171.29, 1269959.51, ],
+[ 5, 1311262.3, 1506479.06, 1407875.85, 1199065.09, ],
+[ 6, 1323432.68, 1481258.28, 1420776.08, 1334798.42, ],
+[ 7, 1333768.64, 1539881.31, 1496773.52, 1309314.01, ],
+[ 8, 1240158.77, 1443805.31, 1159843.3, 1105763.11, ],
+[ 9, 1229985.96, 1447717.55, 1193878.36, 1188456.93, ],
+[ 10, 1218420.98, 1373479.76, 1090201.41, 1027211.99, ],
+[ 11, 1667818.42, 1546481.58, 1129179.03, 1518462.53, ],
+]);
+
+// Set Options
+var options1 = {
+title: 'Consolide Transport: CA',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+gridlines: {count: 12},
+ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data2 = new google.visualization.DataTable();
+data2.addColumn('number', 'Month');
+data2.addColumn('number', '2021');
+data2.addColumn('number', '2022');
+data2.addColumn('number', '2023');
+data2.addColumn('number', '2024');
+
+data2.addRows([
+[ 0, , , , -420280, ],
+[ 5, , 68113, -9807, 177248, ],
+[ 6, , 133762, 187541, 251286, ],
+[ 7, 552804, 307618, 162642, 154616, ],
+[ 8, , 308965, 160474, 203892, ],
+[ 9, , 345556, 248214, 201768, ],
+[ 10, , , 221663, 161267, ],
+[ 11, 418762, 362725, 144618, 90933, ],
+]);
+
+// Set Options
+var options2 = {
+title: 'Consolide Transport: Resultat',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+gridlines: {count: 12},
+ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data3 = new google.visualization.DataTable();
+data3.addColumn('number', 'Month');
+data3.addColumn('number', '2021');
+data3.addColumn('number', '2022');
+data3.addColumn('number', '2023');
+data3.addColumn('number', '2024');
+
+data3.addRows([
+[ 0, , , , -293057, ],
+[ 5, , 471569, 544049, 501510, ],
+[ 6, , 646191, 817460, 674503, ],
+[ 7, 829948, 830879, 891917, 650267, ],
+[ 8, , 899799, 921769, 743801, ],
+[ 9, , 1038597, 1065471, 847205, ],
+[ 10, , , 1130375, 908043, ],
+[ 11, 1058852, 1238827, 1036425, 950800, ],
+]);
+
+// Set Options
+var options3 = {
+title: 'Consolide Transport: EBE',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+gridlines: {count: 12},
+ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data4 = new google.visualization.DataTable();
+data4.addColumn('date', 'Date');
+data4.addColumn('number', 'Valorisation');
+
+data4.addRows([
 [new Date(2020, 11, 31), 7221727.76, ],
 [new Date(2021, 11, 31), 8221356.35, ],
 [new Date(2022, 11, 31), 8463211.56, ],
@@ -134,7 +234,7 @@ data1.addRows([
 ]);
 
 // Set Options
-var options1 = {
+var options4 = {
 title: 'Portefeuille SA',
 backgroundColor:'Lavender',
 height: 400,
@@ -147,11 +247,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data2 = new google.visualization.DataTable();
-data2.addColumn('date', 'Date');
-data2.addColumn('number', '+/- Value');
+var data5 = new google.visualization.DataTable();
+data5.addColumn('date', 'Date');
+data5.addColumn('number', '+/- Value');
 
-data2.addRows([
+data5.addRows([
 [new Date(2020, 11, 31), 627917.28, ],
 [new Date(2021, 11, 31), 835494.29, ],
 [new Date(2022, 11, 31), 464785.47, ],
@@ -172,113 +272,13 @@ data2.addRows([
 ]);
 
 // Set Options
-var options2 = {
+var options5 = {
 title: 'Portefeuille SA',
 backgroundColor:'Lavender',
 height: 400,
 hAxis: {
 format: 'd/M/yy',
 gridlines: {count: 15},
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data3 = new google.visualization.DataTable();
-data3.addColumn('number', 'Month');
-data3.addColumn('number', '2021');
-data3.addColumn('number', '2022');
-data3.addColumn('number', '2023');
-data3.addColumn('number', '2024');
-
-data3.addRows([
-[ 0, , , , -420280, ],
-[ 5, , 68113, -9807, 177248, ],
-[ 6, , 133762, 187541, 251286, ],
-[ 7, 552804, 307618, 162642, 154616, ],
-[ 8, , 308965, 160474, 203892, ],
-[ 9, , 345556, 248214, 201768, ],
-[ 10, , , 221663, 161267, ],
-[ 11, 418762, 362725, 144618, 90933, ],
-]);
-
-// Set Options
-var options3 = {
-title: 'Consolide Transport: Resultat',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-gridlines: {count: 12},
-ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data4 = new google.visualization.DataTable();
-data4.addColumn('number', 'Month');
-data4.addColumn('number', '2021');
-data4.addColumn('number', '2022');
-data4.addColumn('number', '2023');
-data4.addColumn('number', '2024');
-
-data4.addRows([
-[ 0, , , , -293057, ],
-[ 5, , 471569, 544049, 501510, ],
-[ 6, , 646191, 817460, 674503, ],
-[ 7, 829948, 830879, 891917, 650267, ],
-[ 8, , 899799, 921769, 743801, ],
-[ 9, , 1038597, 1065471, 847205, ],
-[ 10, , , 1130375, 908043, ],
-[ 11, 1058852, 1238827, 1036425, 950800, ],
-]);
-
-// Set Options
-var options4 = {
-title: 'Consolide Transport: EBE',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-gridlines: {count: 12},
-ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data5 = new google.visualization.DataTable();
-data5.addColumn('number', 'Month');
-data5.addColumn('number', '2021');
-data5.addColumn('number', '2022');
-data5.addColumn('number', '2023');
-data5.addColumn('number', '2024');
-
-data5.addRows([
-[ 0, 1172707.7, 1186268.57, 1281506.6, 1031708.12, ],
-[ 1, 1178671.27, 1126884.2, 1243145.26, 1058793, ],
-[ 2, 1313084.75, 1435819.96, 1416285.96, 1159429.52, ],
-[ 3, 1422010.94, 1456440.69, 1336536.46, 1199426.53, ],
-[ 4, 1333200.06, 1434532.79, 1293171.29, 1269959.51, ],
-[ 5, 1311262.3, 1506479.06, 1407875.85, 1199065.09, ],
-[ 6, 1323432.68, 1481258.28, 1420776.08, 1334798.42, ],
-[ 7, 1333768.64, 1539881.31, 1496773.52, 1309314.01, ],
-[ 8, 1240158.77, 1443805.31, 1159843.3, 1105763.11, ],
-[ 9, 1229985.96, 1447717.55, 1193878.36, 1188456.93, ],
-[ 10, 1218420.98, 1373479.76, 1090201.41, 1027211.99, ],
-[ 11, 1667818.42, 1546481.58, 1129179.03, 1518462.53, ],
-]);
-
-// Set Options
-var options5 = {
-title: 'Consolide Transport: CA',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-gridlines: {count: 12},
-ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
 },
 vAxis: {
 gridlines: {color: 'none'},
