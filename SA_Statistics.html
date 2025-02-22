@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Sat Feb 22 06:57:31 CET 2025 </h1>
+<h1> Statistiques - Generated: Sat Feb 22 09:21:02 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -96,6 +96,9 @@ id="MyChart3" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart4" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart5" class="folder" style="flex-basis: 100%">
 </div>
 </div>
 
@@ -246,6 +249,42 @@ gridlines: {color: 'none'},
 }
 };
 
+var data5 = new google.visualization.DataTable();
+data5.addColumn('number', 'Month');
+data5.addColumn('number', '2021');
+data5.addColumn('number', '2022');
+data5.addColumn('number', '2023');
+data5.addColumn('number', '2024');
+
+data5.addRows([
+[ 0, 1172707.7, 1186268.57, 1281506.6, 1031708.12, ],
+[ 1, 1178671.27, 1126884.2, 1243145.26, 1058793, ],
+[ 2, 1313084.75, 1435819.96, 1416285.96, 1159429.52, ],
+[ 3, 1422010.94, 1456440.69, 1336536.46, 1199426.53, ],
+[ 4, 1333200.06, 1434532.79, 1293171.29, 1269959.51, ],
+[ 5, 1311262.3, 1506479.06, 1407875.85, 1199065.09, ],
+[ 6, 1323432.68, 1481258.28, 1420776.08, 1334798.42, ],
+[ 7, 1333768.64, 1539881.31, 1496773.52, 1309314.01, ],
+[ 8, 1240158.77, 1443805.31, 1159843.3, 1105763.11, ],
+[ 9, 1229985.96, 1447717.55, 1193878.36, 1188456.93, ],
+[ 10, 1218420.98, 1373479.76, 1090201.41, 1027211.99, ],
+[ 11, 1667818.42, 1546481.58, 1129179.03, 1518462.53, ],
+]);
+
+// Set Options
+var options5 = {
+title: 'Consolide Transport: CA',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+gridlines: {count: 12},
+ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
 // Draw
 const chart1 = new google.visualization.LineChart(document.getElementById('MyChart1'));
 chart1.draw(data1, options1);
@@ -255,6 +294,8 @@ const chart3 = new google.visualization.LineChart(document.getElementById('MyCha
 chart3.draw(data3, options3);
 const chart4 = new google.visualization.LineChart(document.getElementById('MyChart4'));
 chart4.draw(data4, options4);
+const chart5 = new google.visualization.LineChart(document.getElementById('MyChart5'));
+chart5.draw(data5, options5);
 
 }
 </script>
