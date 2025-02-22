@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Sat Feb 22 09:21:56 CET 2025 </h1>
+<h1> Statistiques - Generated: Sat Feb 22 16:02:15 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -89,7 +89,7 @@ background-color: #1abc9c;
 id="MyChart1" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart2" class="folder" style="flex-basis: 50%">
+id="MyChart2" class="folder" style="flex-basis: 100%">
 </div>
 <div
 id="MyChart3" class="folder" style="flex-basis: 50%">
@@ -99,6 +99,9 @@ id="MyChart4" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart5" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart6" class="folder" style="flex-basis: 50%">
 </div>
 </div>
 
@@ -117,18 +120,18 @@ data1.addColumn('number', '2023');
 data1.addColumn('number', '2024');
 
 data1.addRows([
-[ 0, 1172707.7, 1186268.57, 1281506.6, 1031708.12, ],
-[ 1, 1178671.27, 1126884.2, 1243145.26, 1058793, ],
-[ 2, 1313084.75, 1435819.96, 1416285.96, 1159429.52, ],
-[ 3, 1422010.94, 1456440.69, 1336536.46, 1199426.53, ],
-[ 4, 1333200.06, 1434532.79, 1293171.29, 1269959.51, ],
-[ 5, 1311262.3, 1506479.06, 1407875.85, 1199065.09, ],
-[ 6, 1323432.68, 1481258.28, 1420776.08, 1334798.42, ],
-[ 7, 1333768.64, 1539881.31, 1496773.52, 1309314.01, ],
-[ 8, 1240158.77, 1443805.31, 1159843.3, 1105763.11, ],
-[ 9, 1229985.96, 1447717.55, 1193878.36, 1188456.93, ],
-[ 10, 1218420.98, 1373479.76, 1090201.41, 1027211.99, ],
-[ 11, 1667818.42, 1546481.58, 1129179.03, 1518462.53, ],
+[ 0, 879218.37, 897602.62, 906662.37, 744861.7, ],
+[ 1, 887670.24, 883192.74, 883985.06, 780693.84, ],
+[ 2, 990930.11, 1101355.15, 1014279.75, 871644.67, ],
+[ 3, 1116375.03, 1141541.04, 1013112.98, 944589.22, ],
+[ 4, 1035550.52, 1086285.51, 1000328.32, 1010211.9, ],
+[ 5, 1056855.59, 1154075.8, 1046462.22, 963909.99, ],
+[ 6, 1037584.43, 1148749.35, 1096941.25, 1085543.42, ],
+[ 7, 1036113.12, 1203248.97, 1104727.04, 1028748.82, ],
+[ 8, 953176.62, 1118122.04, 870309.37, 863206.71, ],
+[ 9, 961002.23, 1135280.76, 892405.44, 913634.210000001, ],
+[ 10, 916306.17, 1015690.84, 816804.65, 831992.64, ],
+[ 11, 1025737.92, 1006509.56, 884388.93, 826870.06, ],
 ]);
 
 // Set Options
@@ -146,31 +149,37 @@ gridlines: {color: 'none'},
 };
 
 var data2 = new google.visualization.DataTable();
-data2.addColumn('number', 'Month');
-data2.addColumn('number', '2021');
-data2.addColumn('number', '2022');
-data2.addColumn('number', '2023');
-data2.addColumn('number', '2024');
+data2.addColumn('number', 'Year');
+data2.addColumn('number', 'SCHENKER');
+data2.addColumn('number', 'MONDIAL');
+data2.addColumn('number', 'MILLO');
+data2.addColumn('number', 'LOGIDIS');
+data2.addColumn('number', 'LECASUD');
+data2.addColumn('number', 'JOYAU');
+data2.addColumn('number', 'ITMLAI');
+data2.addColumn('number', 'INCONNU');
+data2.addColumn('number', 'EASYDIS');
+data2.addColumn('number', 'DIVERS');
+data2.addColumn('number', 'COCCINELLE');
+data2.addColumn('number', 'BL');
+data2.addColumn('number', 'AUCHAN');
 
 data2.addRows([
-[ 0, , , , -420280, ],
-[ 5, , 68113, -9807, 177248, ],
-[ 6, , 133762, 187541, 251286, ],
-[ 7, 552804, 307618, 162642, 154616, ],
-[ 8, , 308965, 160474, 203892, ],
-[ 9, , 345556, 248214, 201768, ],
-[ 10, , , 221663, 161267, ],
-[ 11, 418762, 362725, 144618, 90933, ],
+[2021, 0, 0, 0, 1722189.94, 5714472.06, 378046.46, 526993.24, 1083678.98, 778946.44, 1121622.11, 0, 0, 0, ],
+[2022, 36824.58, 350, 210710.66, 2317046.01, 5980826.4, 493480, 545179.15, 0, 606752.31, 1891105.6, 243.15, 337174.05, 0, ],
+[2023, 0, 320, 29671.22, 2235141.35, 5501452.11, 456880.75, 506609.66, 5762.27, 526329.29, 1675368.1, 136.4, 436763.62, 0, ],
+[2024, 0, 0, 14151.44, 2381839.08, 4824369.27, 494753.8, 478558.49, 0, 190198.94, 1745214.29, 180.8, 410210.54, 141446.51, ],
 ]);
 
 // Set Options
 var options2 = {
-title: 'Consolide Transport: Resultat',
+title: 'Consolide Transport: CA Clients par Annee',
 backgroundColor:'Lavender',
 height: 400,
+isStacked: true,
 hAxis: {
-gridlines: {count: 12},
-ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
+format: '',
+gridlines: {count: 4},
 },
 vAxis: {
 gridlines: {color: 'none'},
@@ -185,19 +194,19 @@ data3.addColumn('number', '2023');
 data3.addColumn('number', '2024');
 
 data3.addRows([
-[ 0, , , , -293057, ],
-[ 5, , 471569, 544049, 501510, ],
-[ 6, , 646191, 817460, 674503, ],
-[ 7, 829948, 830879, 891917, 650267, ],
-[ 8, , 899799, 921769, 743801, ],
-[ 9, , 1038597, 1065471, 847205, ],
-[ 10, , , 1130375, 908043, ],
-[ 11, 1058852, 1238827, 1036425, 950800, ],
+[ 0, , , , -420280, ],
+[ 5, , 68113, -9807, 177248, ],
+[ 6, , 133762, 187541, 251286, ],
+[ 7, 552804, 307618, 162642, 154616, ],
+[ 8, , 308965, 160474, 203892, ],
+[ 9, , 345556, 248214, 201768, ],
+[ 10, , , 221663, 161267, ],
+[ 11, 418762, 362725, 144618, 90933, ],
 ]);
 
 // Set Options
 var options3 = {
-title: 'Consolide Transport: EBE',
+title: 'Consolide Transport: Resultat',
 backgroundColor:'Lavender',
 height: 400,
 hAxis: {
@@ -210,10 +219,42 @@ gridlines: {color: 'none'},
 };
 
 var data4 = new google.visualization.DataTable();
-data4.addColumn('date', 'Date');
-data4.addColumn('number', 'Valorisation');
+data4.addColumn('number', 'Month');
+data4.addColumn('number', '2021');
+data4.addColumn('number', '2022');
+data4.addColumn('number', '2023');
+data4.addColumn('number', '2024');
 
 data4.addRows([
+[ 0, , , , -293057, ],
+[ 5, , 471569, 544049, 501510, ],
+[ 6, , 646191, 817460, 674503, ],
+[ 7, 829948, 830879, 891917, 650267, ],
+[ 8, , 899799, 921769, 743801, ],
+[ 9, , 1038597, 1065471, 847205, ],
+[ 10, , , 1130375, 908043, ],
+[ 11, 1058852, 1238827, 1036425, 950800, ],
+]);
+
+// Set Options
+var options4 = {
+title: 'Consolide Transport: EBE',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+gridlines: {count: 12},
+ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data5 = new google.visualization.DataTable();
+data5.addColumn('date', 'Date');
+data5.addColumn('number', 'Valorisation');
+
+data5.addRows([
 [new Date(2020, 11, 31), 7221727.76, ],
 [new Date(2021, 11, 31), 8221356.35, ],
 [new Date(2022, 11, 31), 8463211.56, ],
@@ -234,7 +275,7 @@ data4.addRows([
 ]);
 
 // Set Options
-var options4 = {
+var options5 = {
 title: 'Portefeuille SA',
 backgroundColor:'Lavender',
 height: 400,
@@ -247,11 +288,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data5 = new google.visualization.DataTable();
-data5.addColumn('date', 'Date');
-data5.addColumn('number', '+/- Value');
+var data6 = new google.visualization.DataTable();
+data6.addColumn('date', 'Date');
+data6.addColumn('number', '+/- Value');
 
-data5.addRows([
+data6.addRows([
 [new Date(2020, 11, 31), 627917.28, ],
 [new Date(2021, 11, 31), 835494.29, ],
 [new Date(2022, 11, 31), 464785.47, ],
@@ -272,7 +313,7 @@ data5.addRows([
 ]);
 
 // Set Options
-var options5 = {
+var options6 = {
 title: 'Portefeuille SA',
 backgroundColor:'Lavender',
 height: 400,
@@ -288,7 +329,7 @@ gridlines: {color: 'none'},
 // Draw
 const chart1 = new google.visualization.LineChart(document.getElementById('MyChart1'));
 chart1.draw(data1, options1);
-const chart2 = new google.visualization.LineChart(document.getElementById('MyChart2'));
+const chart2 = new google.visualization.ColumnChart(document.getElementById('MyChart2'));
 chart2.draw(data2, options2);
 const chart3 = new google.visualization.LineChart(document.getElementById('MyChart3'));
 chart3.draw(data3, options3);
@@ -296,6 +337,8 @@ const chart4 = new google.visualization.LineChart(document.getElementById('MyCha
 chart4.draw(data4, options4);
 const chart5 = new google.visualization.LineChart(document.getElementById('MyChart5'));
 chart5.draw(data5, options5);
+const chart6 = new google.visualization.LineChart(document.getElementById('MyChart6'));
+chart6.draw(data6, options6);
 
 }
 </script>
