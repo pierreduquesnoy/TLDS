@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Tue Feb 25 08:59:12 CET 2025 </h1>
+<h1> Statistiques - Generated: Tue Feb 25 11:03:30 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -95,7 +95,7 @@ id="MyChart2" class="folder" style="flex-basis: 100%">
 id="MyChart3" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart4" class="folder" style="flex-basis: 50%">
+id="MyChart4" class="folder" style="flex-basis: 100%">
 </div>
 <div
 id="MyChart5" class="folder" style="flex-basis: 50%">
@@ -105,6 +105,9 @@ id="MyChart6" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart7" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart8" class="folder" style="flex-basis: 50%">
 </div>
 </div>
 
@@ -458,13 +461,164 @@ gridlines: {color: 'none'},
 };
 
 var data2 = new google.visualization.DataTable();
-data2.addColumn('number', 'Month');
-data2.addColumn('number', '2021');
-data2.addColumn('number', '2022');
-data2.addColumn('number', '2023');
-data2.addColumn('number', '2024');
+data2.addColumn('date', 'Date');
+data2.addColumn('number', 'Emprunt');
 
 data2.addRows([
+[new Date(2024, 0, 01), 595684.21, ],
+[new Date(2024, 0, 02), 593794.18, ],
+[new Date(2024, 0, 03), 592040.22, ],
+[new Date(2024, 0, 04), 590333.86, ],
+[new Date(2024, 0, 05), 581842.04, ],
+[new Date(2024, 0, 06), 579952.01, ],
+[new Date(2024, 0, 16), 578199.8, ],
+[new Date(2024, 0, 18), 576445.84, ],
+[new Date(2024, 0, 20), 565876.58, ],
+[new Date(2024, 0, 21), 564124.37, ],
+[new Date(2024, 0, 25), 561846.74, ],
+[new Date(2024, 0, 27), 558200.86, ],
+[new Date(2024, 0, 29), 556445.14, ],
+[new Date(2024, 0, 30), 543756.37, ],
+[new Date(2024, 1, 02), 541864.45, ],
+[new Date(2024, 1, 03), 540108.73, ],
+[new Date(2024, 1, 04), 538399.1, ],
+[new Date(2024, 1, 05), 529903.1, ],
+[new Date(2024, 1, 06), 528011.18, ],
+[new Date(2024, 1, 16), 526257.22, ],
+[new Date(2024, 1, 18), 524501.51, ],
+[new Date(2024, 1, 20), 513924.76, ],
+[new Date(2024, 1, 21), 506893.09, ],
+[new Date(2024, 1, 25), 504613.18, ],
+[new Date(2024, 1, 27), 500963.65, ],
+[new Date(2024, 1, 28), 486495.15, ],
+[new Date(2024, 2, 02), 484601.34, ],
+[new Date(2024, 2, 04), 482888.43, ],
+[new Date(2024, 2, 05), 474388.27, ],
+[new Date(2024, 2, 06), 472494.46, ],
+[new Date(2024, 2, 16), 470738.75, ],
+[new Date(2024, 2, 18), 468981.28, ],
+[new Date(2024, 2, 20), 458397.04, ],
+[new Date(2024, 2, 21), 456641.32, ],
+[new Date(2024, 2, 25), 454359.13, ],
+[new Date(2024, 2, 27), 450705.95, ],
+[new Date(2024, 2, 29), 448946.72, ],
+[new Date(2024, 2, 30), 436213.43, ],
+[new Date(2024, 3, 02), 434317.72, ],
+[new Date(2024, 3, 04), 432601.52, ],
+[new Date(2024, 3, 05), 424097.18, ],
+[new Date(2024, 3, 06), 422201.47, ],
+[new Date(2024, 3, 16), 420444, ],
+[new Date(2024, 3, 18), 418684.77, ],
+[new Date(2024, 3, 20), 408093.03, ],
+[new Date(2024, 3, 21), 406335.56, ],
+[new Date(2024, 3, 25), 404051.09, ],
+[new Date(2024, 3, 26), 460551.09, ],
+[new Date(2024, 3, 27), 456894.26, ],
+[new Date(2024, 3, 29), 442377.64, ],
+[new Date(2024, 4, 02), 656480.04, ],
+[new Date(2024, 4, 04), 654760.55, ],
+[new Date(2024, 4, 05), 646252.02, ],
+[new Date(2024, 4, 06), 644354.42, ],
+[new Date(2024, 4, 07), 700854.42, ],
+[new Date(2024, 4, 16), 699095.19, ],
+[new Date(2024, 4, 18), 697334.04, ],
+[new Date(2024, 4, 20), 686734.8, ],
+[new Date(2024, 4, 21), 738975.57, ],
+[new Date(2024, 4, 25), 735206.95, ],
+[new Date(2024, 4, 27), 731546.43, ],
+[new Date(2024, 4, 30), 718768.5, ],
+[new Date(2024, 4, 31), 711660.24, ],
+[new Date(2024, 5, 02), 709760.73, ],
+[new Date(2024, 5, 04), 708037.94, ],
+[new Date(2024, 5, 05), 701288, ],
+[new Date(2024, 5, 06), 697906.62, ],
+[new Date(2024, 5, 14), 810906.62, ],
+[new Date(2024, 5, 16), 809145.47, ],
+[new Date(2024, 5, 20), 798538.72, ],
+[new Date(2024, 5, 21), 796777.71, ],
+[new Date(2024, 5, 25), 793001.97, ],
+[new Date(2024, 5, 28), 849501.97, ],
+[new Date(2024, 5, 29), 836701.65, ],
+[new Date(2024, 5, 30), 829571.77, ],
+[new Date(2024, 6, 04), 827845.67, ],
+[new Date(2024, 6, 05), 821093.18, ],
+[new Date(2024, 6, 06), 819606.48, ],
+[new Date(2024, 6, 13), 818124.61, ],
+[new Date(2024, 6, 20), 807510.35, ],
+[new Date(2024, 6, 24), 806028.48, ],
+[new Date(2024, 6, 25), 802245.63, ],
+[new Date(2024, 6, 27), 800763.76, ],
+[new Date(2024, 6, 30), 787941, ],
+[new Date(2024, 6, 31), 780789.43, ],
+[new Date(2024, 7, 04), 779060.02, ],
+[new Date(2024, 7, 06), 777568.49, ],
+[new Date(2024, 7, 13), 776081.79, ],
+[new Date(2024, 7, 20), 765460.01, ],
+[new Date(2024, 7, 24), 763973.31, ],
+[new Date(2024, 7, 25), 760183.31, ],
+[new Date(2024, 7, 27), 758696.61, ],
+[new Date(2024, 7, 30), 745851.4, ],
+[new Date(2024, 7, 31), 738678.08, ],
+[new Date(2024, 8, 04), 736945.35, ],
+[new Date(2024, 8, 06), 735448.96, ],
+[new Date(2024, 8, 13), 733957.43, ],
+[new Date(2024, 8, 20), 721566.15, ],
+[new Date(2024, 8, 24), 720074.62, ],
+[new Date(2024, 8, 25), 716277.46, ],
+[new Date(2024, 8, 27), 714785.93, ],
+[new Date(2024, 8, 29), 703680.17, ],
+[new Date(2024, 8, 30), 696485.03, ],
+[new Date(2024, 9, 04), 694748.98, ],
+[new Date(2024, 9, 06), 693247.73, ],
+[new Date(2024, 9, 13), 691751.34, ],
+[new Date(2024, 9, 20), 681114.51, ],
+[new Date(2024, 9, 24), 679618.12, ],
+[new Date(2024, 9, 25), 675813.78, ],
+[new Date(2024, 9, 27), 674317.39, ],
+[new Date(2024, 9, 30), 661427.09, ],
+[new Date(2024, 9, 31), 654210.07, ],
+[new Date(2024, 10, 04), 652470.69, ],
+[new Date(2024, 10, 06), 650964.55, ],
+[new Date(2024, 10, 13), 649463.3, ],
+[new Date(2024, 10, 20), 638818.93, ],
+[new Date(2024, 10, 24), 637317.68, ],
+[new Date(2024, 10, 25), 633506.14, ],
+[new Date(2024, 10, 27), 632004.89, ],
+[new Date(2024, 10, 29), 619092.01, ],
+[new Date(2024, 10, 30), 611853.03, ],
+[new Date(2024, 11, 04), 610110.31, ],
+[new Date(2024, 11, 06), 608599.27, ],
+[new Date(2024, 11, 13), 607093.13, ],
+[new Date(2024, 11, 20), 596441.22, ],
+[new Date(2024, 11, 24), 594935.08, ],
+[new Date(2024, 11, 25), 591116.33, ],
+[new Date(2024, 11, 27), 589610.19, ],
+[new Date(2024, 11, 30), 576674.67, ],
+[new Date(2024, 11, 31), 569413.68, ],
+]);
+
+// Set Options
+var options2 = {
+title: 'Consolide Transport: Emprunt',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+format: 'd/M/yy',
+gridlines: {count: 15},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data3 = new google.visualization.DataTable();
+data3.addColumn('number', 'Month');
+data3.addColumn('number', '2021');
+data3.addColumn('number', '2022');
+data3.addColumn('number', '2023');
+data3.addColumn('number', '2024');
+
+data3.addRows([
 [ 0, 869618.37, 871202.62, 906662.37, 765111.7, ],
 [ 1, 878323.94, 872792.74, 883985.06, 780693.84, ],
 [ 2, 990930.11, 1040841.09, 1014279.75, 871644.67, ],
@@ -480,7 +634,7 @@ data2.addRows([
 ]);
 
 // Set Options
-var options2 = {
+var options3 = {
 title: 'Consolide Transport: CA',
 backgroundColor:'Lavender',
 height: 400,
@@ -493,23 +647,23 @@ gridlines: {color: 'none'},
 }
 };
 
-var data3 = new google.visualization.DataTable();
-data3.addColumn('number', 'Year');
-data3.addColumn('number', 'SCHENKER');
-data3.addColumn('number', 'MONDIAL');
-data3.addColumn('number', 'MILLO');
-data3.addColumn('number', 'LOGIDIS');
-data3.addColumn('number', 'LECASUD');
-data3.addColumn('number', 'JOYAU');
-data3.addColumn('number', 'ITMLAI');
-data3.addColumn('number', 'INCONNU');
-data3.addColumn('number', 'EASYDIS');
-data3.addColumn('number', 'DIVERS');
-data3.addColumn('number', 'COCCINELLE');
-data3.addColumn('number', 'BL');
-data3.addColumn('number', 'AUCHAN');
+var data4 = new google.visualization.DataTable();
+data4.addColumn('number', 'Year');
+data4.addColumn('number', 'SCHENKER');
+data4.addColumn('number', 'MONDIAL');
+data4.addColumn('number', 'MILLO');
+data4.addColumn('number', 'LOGIDIS');
+data4.addColumn('number', 'LECASUD');
+data4.addColumn('number', 'JOYAU');
+data4.addColumn('number', 'ITMLAI');
+data4.addColumn('number', 'INCONNU');
+data4.addColumn('number', 'EASYDIS');
+data4.addColumn('number', 'DIVERS');
+data4.addColumn('number', 'COCCINELLE');
+data4.addColumn('number', 'BL');
+data4.addColumn('number', 'AUCHAN');
 
-data3.addRows([
+data4.addRows([
 [2021, 0, 0, 0, 1722189.94, 5714472.06, 378046.46, 526993.24, 0, 778946.44, 1180254.28, 0, 1025046.81, 0, ],
 [2022, 36824.58, 350, 210710.66, 2317046.01, 5980826.4, 493480, 545179.15, 0, 606752.31, 1891105.6, 243.15, 337174.05, 0, ],
 [2023, 0, 320, 29671.22, 2235141.35, 5501452.11, 456880.75, 506609.66, 5762.27, 526329.29, 1675368.1, 136.4, 436763.62, 0, ],
@@ -517,7 +671,7 @@ data3.addRows([
 ]);
 
 // Set Options
-var options3 = {
+var options4 = {
 title: 'Consolide Transport: CA Clients par Annee',
 backgroundColor:'Lavender',
 height: 550,
@@ -525,38 +679,6 @@ isStacked: true,
 hAxis: {
 format: '',
 gridlines: {count: 4},
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data4 = new google.visualization.DataTable();
-data4.addColumn('number', 'Month');
-data4.addColumn('number', '2021');
-data4.addColumn('number', '2022');
-data4.addColumn('number', '2023');
-data4.addColumn('number', '2024');
-
-data4.addRows([
-[ 0, , , , -420280, ],
-[ 5, , 68113, -9807, 177248, ],
-[ 6, , 133762, 187541, 251286, ],
-[ 7, 552804, 307618, 162642, 154616, ],
-[ 8, , 308965, 160474, 203892, ],
-[ 9, , 345556, 248214, 201768, ],
-[ 10, , , 221663, 161267, ],
-[ 11, 418762, 362725, 144618, 90933, ],
-]);
-
-// Set Options
-var options4 = {
-title: 'Consolide Transport: Resultat',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-gridlines: {count: 12},
-ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
 },
 vAxis: {
 gridlines: {color: 'none'},
@@ -571,19 +693,19 @@ data5.addColumn('number', '2023');
 data5.addColumn('number', '2024');
 
 data5.addRows([
-[ 0, , , , -293057, ],
-[ 5, , 471569, 544049, 501510, ],
-[ 6, , 646191, 817460, 674503, ],
-[ 7, 829948, 830879, 891917, 650267, ],
-[ 8, , 899799, 921769, 743801, ],
-[ 9, , 1038597, 1065471, 847205, ],
-[ 10, , , 1130375, 908043, ],
-[ 11, 1058852, 1238827, 1036425, 950800, ],
+[ 0, , , , -420280, ],
+[ 5, , 68113, -9807, 177248, ],
+[ 6, , 133762, 187541, 251286, ],
+[ 7, 552804, 307618, 162642, 154616, ],
+[ 8, , 308965, 160474, 203892, ],
+[ 9, , 345556, 248214, 201768, ],
+[ 10, , , 221663, 161267, ],
+[ 11, 418762, 362725, 144618, 90933, ],
 ]);
 
 // Set Options
 var options5 = {
-title: 'Consolide Transport: EBE',
+title: 'Consolide Transport: Resultat',
 backgroundColor:'Lavender',
 height: 400,
 hAxis: {
@@ -596,10 +718,42 @@ gridlines: {color: 'none'},
 };
 
 var data6 = new google.visualization.DataTable();
-data6.addColumn('date', 'Date');
-data6.addColumn('number', 'Valorisation');
+data6.addColumn('number', 'Month');
+data6.addColumn('number', '2021');
+data6.addColumn('number', '2022');
+data6.addColumn('number', '2023');
+data6.addColumn('number', '2024');
 
 data6.addRows([
+[ 0, , , , -293057, ],
+[ 5, , 471569, 544049, 501510, ],
+[ 6, , 646191, 817460, 674503, ],
+[ 7, 829948, 830879, 891917, 650267, ],
+[ 8, , 899799, 921769, 743801, ],
+[ 9, , 1038597, 1065471, 847205, ],
+[ 10, , , 1130375, 908043, ],
+[ 11, 1058852, 1238827, 1036425, 950800, ],
+]);
+
+// Set Options
+var options6 = {
+title: 'Consolide Transport: EBE',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+gridlines: {count: 12},
+ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data7 = new google.visualization.DataTable();
+data7.addColumn('date', 'Date');
+data7.addColumn('number', 'Valorisation');
+
+data7.addRows([
 [new Date(2020, 11, 31), 7221727.76, ],
 [new Date(2021, 11, 31), 8221356.35, ],
 [new Date(2022, 11, 31), 8463211.56, ],
@@ -623,7 +777,7 @@ data6.addRows([
 ]);
 
 // Set Options
-var options6 = {
+var options7 = {
 title: 'Portefeuille SA',
 backgroundColor:'Lavender',
 height: 400,
@@ -636,11 +790,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data7 = new google.visualization.DataTable();
-data7.addColumn('date', 'Date');
-data7.addColumn('number', '+/- Value');
+var data8 = new google.visualization.DataTable();
+data8.addColumn('date', 'Date');
+data8.addColumn('number', '+/- Value');
 
-data7.addRows([
+data8.addRows([
 [new Date(2020, 11, 31), 627917.28, ],
 [new Date(2021, 11, 31), 835494.29, ],
 [new Date(2022, 11, 31), 464785.47, ],
@@ -664,7 +818,7 @@ data7.addRows([
 ]);
 
 // Set Options
-var options7 = {
+var options8 = {
 title: 'Portefeuille SA',
 backgroundColor:'Lavender',
 height: 400,
@@ -682,9 +836,9 @@ const chart1 = new google.visualization.LineChart(document.getElementById('MyCha
 chart1.draw(data1, options1);
 const chart2 = new google.visualization.LineChart(document.getElementById('MyChart2'));
 chart2.draw(data2, options2);
-const chart3 = new google.visualization.ColumnChart(document.getElementById('MyChart3'));
+const chart3 = new google.visualization.LineChart(document.getElementById('MyChart3'));
 chart3.draw(data3, options3);
-const chart4 = new google.visualization.LineChart(document.getElementById('MyChart4'));
+const chart4 = new google.visualization.ColumnChart(document.getElementById('MyChart4'));
 chart4.draw(data4, options4);
 const chart5 = new google.visualization.LineChart(document.getElementById('MyChart5'));
 chart5.draw(data5, options5);
@@ -692,6 +846,8 @@ const chart6 = new google.visualization.LineChart(document.getElementById('MyCha
 chart6.draw(data6, options6);
 const chart7 = new google.visualization.LineChart(document.getElementById('MyChart7'));
 chart7.draw(data7, options7);
+const chart8 = new google.visualization.LineChart(document.getElementById('MyChart8'));
+chart8.draw(data8, options8);
 
 }
 </script>
