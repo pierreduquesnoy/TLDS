@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Thu Feb 27 08:50:16 CET 2025 </h1>
+<h1> Statistiques - Generated: Thu Feb 27 08:52:39 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -89,16 +89,16 @@ background-color: #1abc9c;
 id="MyChart1" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart2" class="folder" style="flex-basis: 50%">
+id="MyChart2" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart3" class="folder" style="flex-basis: 50%">
+id="MyChart3" class="folder" style="flex-basis: 100%">
 </div>
 <div
 id="MyChart4" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart5" class="folder" style="flex-basis: 100%">
+id="MyChart5" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart6" class="folder" style="flex-basis: 50%">
@@ -108,9 +108,6 @@ id="MyChart7" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart8" class="folder" style="flex-basis: 50%">
-</div>
-<div
-id="MyChart9" class="folder" style="flex-basis: 50%">
 </div>
 </div>
 
@@ -123,352 +120,9 @@ function drawCallback() {
 // Set Data
 var data1 = new google.visualization.DataTable();
 data1.addColumn('date', 'Date');
-data1.addColumn('number', 'Tresorerie_2024');
-data1.addColumn('number', 'Emprunts_2024');
+data1.addColumn('number', 'Tresorerie');
 
 data1.addRows([
-[new Date(2025, 0, 01), 1227239.63, 595684.21, ],
-[new Date(2025, 0, 02), 706164.87, 593794.18, ],
-[new Date(2025, 0, 03), 968321.08, 592040.22, ],
-[new Date(2025, 0, 04), 381527.18, 590333.86, ],
-[new Date(2025, 0, 05), 1145327.89, 581842.04, ],
-[new Date(2025, 0, 06), 1312766.08, 579952.01, ],
-[new Date(2025, 0, 08), 320975.48, 579952.01, ],
-[new Date(2025, 0, 09), 1103682.37, 579952.01, ],
-[new Date(2025, 0, 10), 1092740.65, 579952.01, ],
-[new Date(2025, 0, 11), 829619.37, 579952.01, ],
-[new Date(2025, 0, 12), 935177.21, 579952.01, ],
-[new Date(2025, 0, 15), 1010863.88, 579952.01, ],
-[new Date(2025, 0, 16), 942210.6, 578199.8, ],
-[new Date(2025, 0, 17), 820166.94, 578199.8, ],
-[new Date(2025, 0, 18), 757836.07, 576445.84, ],
-[new Date(2025, 0, 19), 511199.47, 576445.84, ],
-[new Date(2025, 0, 20), 757475.97, 565876.58, ],
-[new Date(2025, 0, 21), 498612.46, 564124.37, ],
-[new Date(2025, 0, 22), 851358.48, 564124.37, ],
-[new Date(2025, 0, 23), 595068.93, 564124.37, ],
-[new Date(2025, 0, 25), 875773.64, 561846.74, ],
-[new Date(2025, 0, 26), 786622.01, 561846.74, ],
-[new Date(2025, 0, 27), 615724.85, 558200.86, ],
-[new Date(2025, 0, 29), 516173.39, 556445.14, ],
-[new Date(2025, 0, 30), 1307572.91, 543756.37, ],
-[new Date(2025, 0, 31), 1227037.93, 543756.37, ],
-[new Date(2025, 1, 01), 601744.23, 543756.37, ],
-[new Date(2025, 1, 02), 1093408.23, 541864.45, ],
-[new Date(2025, 1, 03), 227024.44, 540108.73, ],
-[new Date(2025, 1, 04), 225122.79, 538399.1, ],
-[new Date(2025, 1, 05), 1181688.19, 529903.1, ],
-[new Date(2025, 1, 06), 545657.99, 528011.18, ],
-[new Date(2025, 1, 07), 439336.81, 528011.18, ],
-[new Date(2025, 1, 08), 1137715.33, 528011.18, ],
-[new Date(2025, 1, 09), 750618.43, 528011.18, ],
-[new Date(2025, 1, 10), 749317.92, 528011.18, ],
-[new Date(2025, 1, 11), 1137614.86, 528011.18, ],
-[new Date(2025, 1, 12), 1232806.88, 528011.18, ],
-[new Date(2025, 1, 13), 959740.19, 528011.18, ],
-[new Date(2025, 1, 14), 1149511.45, 528011.18, ],
-[new Date(2025, 1, 15), 1092314.66, 528011.18, ],
-[new Date(2025, 1, 16), 1018364.81, 526257.22, ],
-[new Date(2025, 1, 18), 601671.37, 524501.51, ],
-[new Date(2025, 1, 19), 328446.74, 524501.51, ],
-[new Date(2025, 1, 20), 590974.11, 513924.76, ],
-[new Date(2025, 1, 21), 907738.68, 506893.09, ],
-[new Date(2025, 1, 22), 786991.69, 506893.09, ],
-[new Date(2025, 1, 23), 920821.48, 506893.09, ],
-[new Date(2025, 1, 25), 597522.01, 504613.18, ],
-[new Date(2025, 1, 26), 897145.34, 504613.18, ],
-[new Date(2025, 1, 27), 891335.55, 500963.65, ],
-[new Date(2025, 1, 28), 778484.07, 486495.15, ],
-[new Date(2025, 1, 29), 1366515.48, 486495.15, ],
-[new Date(2025, 2, 01), 1317714.9, 486495.15, ],
-[new Date(2025, 2, 02), 600835.81, 484601.34, ],
-[new Date(2025, 2, 04), 837255.37, 482888.43, ],
-[new Date(2025, 2, 05), 1320794.62, 474388.27, ],
-[new Date(2025, 2, 06), 1298611.71, 472494.46, ],
-[new Date(2025, 2, 07), 1201941.82, 472494.46, ],
-[new Date(2025, 2, 08), 979856.3, 472494.46, ],
-[new Date(2025, 2, 09), 840681.95, 472494.46, ],
-[new Date(2025, 2, 10), 839677.55, 472494.46, ],
-[new Date(2025, 2, 11), 1287101.26, 472494.46, ],
-[new Date(2025, 2, 12), 1192034.98, 472494.46, ],
-[new Date(2025, 2, 13), 1173199.75, 472494.46, ],
-[new Date(2025, 2, 14), 1101509.29, 472494.46, ],
-[new Date(2025, 2, 15), 968921.92, 472494.46, ],
-[new Date(2025, 2, 16), 741736.93, 470738.75, ],
-[new Date(2025, 2, 18), 912318.8, 468981.28, ],
-[new Date(2025, 2, 19), 914416.06, 468981.28, ],
-[new Date(2025, 2, 20), 904062.8, 458397.04, ],
-[new Date(2025, 2, 21), 863447.78, 456641.32, ],
-[new Date(2025, 2, 22), 878717.38, 456641.32, ],
-[new Date(2025, 2, 23), 767345.83, 456641.32, ],
-[new Date(2025, 2, 25), 702483.5, 454359.13, ],
-[new Date(2025, 2, 27), 823539.9, 450705.95, ],
-[new Date(2025, 2, 28), 1284385.62, 450705.95, ],
-[new Date(2025, 2, 29), 1243853.12, 448946.72, ],
-[new Date(2025, 2, 30), 445480.25, 436213.43, ],
-[new Date(2025, 2, 31), 941622.45, 436213.43, ],
-[new Date(2025, 3, 01), 426126.78, 436213.43, ],
-[new Date(2025, 3, 02), 1519281.29, 434317.72, ],
-[new Date(2025, 3, 03), 1463050.16, 434317.72, ],
-[new Date(2025, 3, 04), 1160436.71, 432601.52, ],
-[new Date(2025, 3, 05), 1107122.83, 424097.18, ],
-[new Date(2025, 3, 06), 821459.57, 422201.47, ],
-[new Date(2025, 3, 07), 441394.56, 422201.47, ],
-[new Date(2025, 3, 08), 713907.45, 422201.47, ],
-[new Date(2025, 3, 09), 440523.25, 422201.47, ],
-[new Date(2025, 3, 10), 1056807.87, 422201.47, ],
-[new Date(2025, 3, 11), 709142.9, 422201.47, ],
-[new Date(2025, 3, 12), 728420.98, 422201.47, ],
-[new Date(2025, 3, 15), 837982.21, 422201.47, ],
-[new Date(2025, 3, 16), 837654.72, 420444, ],
-[new Date(2025, 3, 17), 1196444.69, 420444, ],
-[new Date(2025, 3, 18), 850444.81, 418684.77, ],
-[new Date(2025, 3, 19), 479734.74, 418684.77, ],
-[new Date(2025, 3, 20), 184242.42, 408093.03, ],
-[new Date(2025, 3, 21), 182352.67, 406335.56, ],
-[new Date(2025, 3, 22), 802733.52, 406335.56, ],
-[new Date(2025, 3, 23), 473660.45, 406335.56, ],
-[new Date(2025, 3, 24), 710853.35, 406335.56, ],
-[new Date(2025, 3, 25), 750137.82, 404051.09, ],
-[new Date(2025, 3, 26), 572236.21, 460551.09, ],
-[new Date(2025, 3, 27), 469164.47, 456894.26, ],
-[new Date(2025, 3, 29), 769552.17, 442377.64, ],
-[new Date(2025, 3, 30), 1212928.67, 442377.64, ],
-[new Date(2025, 4, 01), 259281.12, 442377.64, ],
-[new Date(2025, 4, 02), 1688543.76, 656480.04, ],
-[new Date(2025, 4, 03), 1054915.32, 656480.04, ],
-[new Date(2025, 4, 04), 609159.4, 654760.55, ],
-[new Date(2025, 4, 05), 932107.7, 646252.02, ],
-[new Date(2025, 4, 06), 831542.11, 644354.42, ],
-[new Date(2025, 4, 07), 758509.79, 700854.42, ],
-[new Date(2025, 4, 09), 602032.46, 700854.42, ],
-[new Date(2025, 4, 10), 1139800.48, 700854.42, ],
-[new Date(2025, 4, 12), 1090053.43, 700854.42, ],
-[new Date(2025, 4, 13), 722838.87, 700854.42, ],
-[new Date(2025, 4, 14), 723534.87, 700854.42, ],
-[new Date(2025, 4, 15), 626213.84, 700854.42, ],
-[new Date(2025, 4, 16), 627968.35, 699095.19, ],
-[new Date(2025, 4, 17), 542269.08, 699095.19, ],
-[new Date(2025, 4, 18), 329743.08, 697334.04, ],
-[new Date(2025, 4, 19), 274850.28, 697334.04, ],
-[new Date(2025, 4, 20), 392229.04, 686734.8, ],
-[new Date(2025, 4, 21), 544227.9, 738975.57, ],
-[new Date(2025, 4, 22), 541739.9, 738975.57, ],
-[new Date(2025, 4, 23), 428268.58, 738975.57, ],
-[new Date(2025, 4, 24), 529114.1, 738975.57, ],
-[new Date(2025, 4, 25), 336927.42, 735206.95, ],
-[new Date(2025, 4, 26), 279604.2, 735206.95, ],
-[new Date(2025, 4, 27), 435527.23, 731546.43, ],
-[new Date(2025, 4, 29), 371918.46, 731546.43, ],
-[new Date(2025, 4, 30), 438049.96, 718768.5, ],
-[new Date(2025, 4, 31), 1115527.47, 711660.24, ],
-[new Date(2025, 5, 01), 250573, 711660.24, ],
-[new Date(2025, 5, 02), 1282737.4, 709760.73, ],
-[new Date(2025, 5, 03), 691198.8, 709760.73, ],
-[new Date(2025, 5, 04), 1026912.86, 708037.94, ],
-[new Date(2025, 5, 05), 1008852.26, 701288, ],
-[new Date(2025, 5, 06), 1085412.59, 697906.62, ],
-[new Date(2025, 5, 07), 1023538.53, 697906.62, ],
-[new Date(2025, 5, 10), 1128820.17, 697906.62, ],
-[new Date(2025, 5, 11), 992486.08, 697906.62, ],
-[new Date(2025, 5, 12), 818924.05, 697906.62, ],
-[new Date(2025, 5, 13), 550330.18, 697906.62, ],
-[new Date(2025, 5, 14), 1096069.74, 810906.62, ],
-[new Date(2025, 5, 15), 680840.03, 810906.62, ],
-[new Date(2025, 5, 16), 678898.54, 809145.47, ],
-[new Date(2025, 5, 17), 578170.45, 809145.47, ],
-[new Date(2025, 5, 18), 740224.51, 809145.47, ],
-[new Date(2025, 5, 19), 446968.11, 809145.47, ],
-[new Date(2025, 5, 20), 426824.47, 798538.72, ],
-[new Date(2025, 5, 21), 581166.95, 796777.71, ],
-[new Date(2025, 5, 22), 1096257.96, 796777.71, ],
-[new Date(2025, 5, 23), 278152.59, 796777.71, ],
-[new Date(2025, 5, 24), 595514.22, 796777.71, ],
-[new Date(2025, 5, 25), 378197.85, 793001.97, ],
-[new Date(2025, 5, 26), 379240.85, 793001.97, ],
-[new Date(2025, 5, 27), 586152.59, 793001.97, ],
-[new Date(2025, 5, 28), 496629.61, 849501.97, ],
-[new Date(2025, 5, 29), 122618.55, 836701.65, ],
-[new Date(2025, 5, 30), 334401.37, 829571.77, ],
-[new Date(2025, 6, 01), 1301190.08, 829571.77, ],
-[new Date(2025, 6, 02), 715037.04, 829571.77, ],
-[new Date(2025, 6, 03), 1067310.96, 829571.77, ],
-[new Date(2025, 6, 04), 656190.43, 827845.67, ],
-[new Date(2025, 6, 05), 994567.04, 821093.18, ],
-[new Date(2025, 6, 06), 366824.69, 819606.48, ],
-[new Date(2025, 6, 08), 698570, 819606.48, ],
-[new Date(2025, 6, 09), 406583.26, 819606.48, ],
-[new Date(2025, 6, 10), 1049930.76, 819606.48, ],
-[new Date(2025, 6, 11), 531998.25, 819606.48, ],
-[new Date(2025, 6, 12), 514457.78, 819606.48, ],
-[new Date(2025, 6, 13), 196050.54, 818124.61, ],
-[new Date(2025, 6, 15), 581068.49, 818124.61, ],
-[new Date(2025, 6, 16), 590300.95, 818124.61, ],
-[new Date(2025, 6, 17), 774571.19, 818124.61, ],
-[new Date(2025, 6, 18), 384972.98, 818124.61, ],
-[new Date(2025, 6, 19), 299022, 818124.61, ],
-[new Date(2025, 6, 20), 140469.6, 807510.35, ],
-[new Date(2025, 6, 23), 554812.2, 807510.35, ],
-[new Date(2025, 6, 24), 566999.68, 806028.48, ],
-[new Date(2025, 6, 25), 588018.97, 802245.63, ],
-[new Date(2025, 6, 26), 326934.06, 802245.63, ],
-[new Date(2025, 6, 27), 126922.06, 800763.76, ],
-[new Date(2025, 6, 29), 494078.51, 800763.76, ],
-[new Date(2025, 6, 30), 511957.85, 787941, ],
-[new Date(2025, 6, 31), 865957.62, 780789.43, ],
-[new Date(2025, 7, 01), 885007.63, 780789.43, ],
-[new Date(2025, 7, 02), 916454.08, 780789.43, ],
-[new Date(2025, 7, 03), 473240.43, 780789.43, ],
-[new Date(2025, 7, 04), 471338.78, 779060.02, ],
-[new Date(2025, 7, 05), 976560.39, 779060.02, ],
-[new Date(2025, 7, 06), 694269.71, 777568.49, ],
-[new Date(2025, 7, 07), 723026.06, 777568.49, ],
-[new Date(2025, 7, 08), 384389.71, 777568.49, ],
-[new Date(2025, 7, 09), 884535.91, 777568.49, ],
-[new Date(2025, 7, 10), 347030.79, 777568.49, ],
-[new Date(2025, 7, 11), 1255419.51, 777568.49, ],
-[new Date(2025, 7, 12), 960720.18, 777568.49, ],
-[new Date(2025, 7, 13), 345095.89, 776081.79, ],
-[new Date(2025, 7, 14), 864387.65, 776081.79, ],
-[new Date(2025, 7, 15), 645431.51, 776081.79, ],
-[new Date(2025, 7, 16), 598559.85, 776081.79, ],
-[new Date(2025, 7, 20), 161276.82, 765460.01, ],
-[new Date(2025, 7, 21), 495895.01, 765460.01, ],
-[new Date(2025, 7, 22), 535712.02, 765460.01, ],
-[new Date(2025, 7, 23), 560543.55, 765460.01, ],
-[new Date(2025, 7, 24), 409420.35, 763973.31, ],
-[new Date(2025, 7, 25), 276769.23, 760183.31, ],
-[new Date(2025, 7, 26), 337611.44, 760183.31, ],
-[new Date(2025, 7, 27), 542366.14, 758696.61, ],
-[new Date(2025, 7, 28), 570629.7, 758696.61, ],
-[new Date(2025, 7, 29), 737079.69, 758696.61, ],
-[new Date(2025, 7, 30), 1095298.44, 745851.4, ],
-[new Date(2025, 7, 31), 403455.17, 738678.08, ],
-[new Date(2025, 8, 01), 400660.54, 738678.08, ],
-[new Date(2025, 8, 02), 831092.15, 738678.08, ],
-[new Date(2025, 8, 03), 1159131.32, 738678.08, ],
-[new Date(2025, 8, 04), 752045.18, 736945.35, ],
-[new Date(2025, 8, 05), 963279.26, 736945.35, ],
-[new Date(2025, 8, 06), 502433.27, 735448.96, ],
-[new Date(2025, 8, 07), 1003530.8, 735448.96, ],
-[new Date(2025, 8, 10), 1079235.74, 735448.96, ],
-[new Date(2025, 8, 11), 657882.64, 735448.96, ],
-[new Date(2025, 8, 12), 461023.12, 735448.96, ],
-[new Date(2025, 8, 13), 1075521.28, 733957.43, ],
-[new Date(2025, 8, 15), 1005955.25, 733957.43, ],
-[new Date(2025, 8, 16), 778624.74, 733957.43, ],
-[new Date(2025, 8, 17), 527041.47, 733957.43, ],
-[new Date(2025, 8, 18), 262594.13, 733957.43, ],
-[new Date(2025, 8, 19), 262573.23, 733957.43, ],
-[new Date(2025, 8, 20), 272617.32, 721566.15, ],
-[new Date(2025, 8, 21), 1134140.93, 721566.15, ],
-[new Date(2025, 8, 23), 733220.12, 721566.15, ],
-[new Date(2025, 8, 24), 712172.63, 720074.62, ],
-[new Date(2025, 8, 25), 656515.95, 716277.46, ],
-[new Date(2025, 8, 26), 742847.99, 716277.46, ],
-[new Date(2025, 8, 27), 296050.79, 714785.93, ],
-[new Date(2025, 8, 29), 283979.69, 703680.17, ],
-[new Date(2025, 8, 30), 1127074.79, 696485.03, ],
-[new Date(2025, 9, 01), 557713.74, 696485.03, ],
-[new Date(2025, 9, 02), 523009.57, 696485.03, ],
-[new Date(2025, 9, 03), 1330371.59, 696485.03, ],
-[new Date(2025, 9, 04), 1308634.53, 694748.98, ],
-[new Date(2025, 9, 05), 1051062.52, 694748.98, ],
-[new Date(2025, 9, 06), 724728.43, 693247.73, ],
-[new Date(2025, 9, 07), 985983.15, 693247.73, ],
-[new Date(2025, 9, 08), 986114.15, 693247.73, ],
-[new Date(2025, 9, 09), 667182.37, 693247.73, ],
-[new Date(2025, 9, 10), 1242084.34, 693247.73, ],
-[new Date(2025, 9, 11), 621223.83, 693247.73, ],
-[new Date(2025, 9, 12), 1193229.81, 693247.73, ],
-[new Date(2025, 9, 13), 619557.13, 691751.34, ],
-[new Date(2025, 9, 14), 619503.73, 691751.34, ],
-[new Date(2025, 9, 15), 996185.61, 691751.34, ],
-[new Date(2025, 9, 16), 718294.19, 691751.34, ],
-[new Date(2025, 9, 18), 698311.04, 691751.34, ],
-[new Date(2025, 9, 19), 482012.86, 691751.34, ],
-[new Date(2025, 9, 20), 471315.6, 681114.51, ],
-[new Date(2025, 9, 21), 846888.47, 681114.51, ],
-[new Date(2025, 9, 22), 677993.28, 681114.51, ],
-[new Date(2025, 9, 23), 680282.88, 681114.51, ],
-[new Date(2025, 9, 24), 822098.17, 679618.12, ],
-[new Date(2025, 9, 25), 791109.19, 675813.78, ],
-[new Date(2025, 9, 27), 361404.71, 674317.39, ],
-[new Date(2025, 9, 28), 822256.7, 674317.39, ],
-[new Date(2025, 9, 29), 1215565.95, 674317.39, ],
-[new Date(2025, 9, 30), 684886.8, 661427.09, ],
-[new Date(2025, 9, 31), 1249657.97, 654210.07, ],
-[new Date(2025, 10, 01), 335217.13, 654210.07, ],
-[new Date(2025, 10, 02), 316716.63, 654210.07, ],
-[new Date(2025, 10, 04), 909029.68, 652470.69, ],
-[new Date(2025, 10, 05), 1302676.02, 652470.69, ],
-[new Date(2025, 10, 06), 451191.58, 650964.55, ],
-[new Date(2025, 10, 07), 1225341.48, 650964.55, ],
-[new Date(2025, 10, 08), 920668.05, 650964.55, ],
-[new Date(2025, 10, 10), 350781.17, 650964.55, ],
-[new Date(2025, 10, 11), 1192254.23, 650964.55, ],
-[new Date(2025, 10, 12), 350089.78, 650964.55, ],
-[new Date(2025, 10, 13), 851368.49, 649463.3, ],
-[new Date(2025, 10, 14), 1258097.09, 649463.3, ],
-[new Date(2025, 10, 15), 901107.53, 649463.3, ],
-[new Date(2025, 10, 17), 420384.8, 649463.3, ],
-[new Date(2025, 10, 18), 842844.71, 649463.3, ],
-[new Date(2025, 10, 20), 438725.54, 638818.93, ],
-[new Date(2025, 10, 21), 710870.43, 638818.93, ],
-[new Date(2025, 10, 22), 814360.2, 638818.93, ],
-[new Date(2025, 10, 24), 542244.05, 637317.68, ],
-[new Date(2025, 10, 25), 794870.51, 633506.14, ],
-[new Date(2025, 10, 26), 667011.51, 633506.14, ],
-[new Date(2025, 10, 27), 566814.77, 632004.89, ],
-[new Date(2025, 10, 28), 625449.06, 632004.89, ],
-[new Date(2025, 10, 29), 1249033.78, 619092.01, ],
-[new Date(2025, 10, 30), 636794.48, 611853.03, ],
-[new Date(2025, 11, 01), 302051.1, 611853.03, ],
-[new Date(2025, 11, 02), 621163.89, 611853.03, ],
-[new Date(2025, 11, 03), 1352888.25, 611853.03, ],
-[new Date(2025, 11, 04), 895797.5, 610110.31, ],
-[new Date(2025, 11, 05), 889318.51, 610110.31, ],
-[new Date(2025, 11, 06), 702929.03, 608599.27, ],
-[new Date(2025, 11, 09), 1287746.97, 608599.27, ],
-[new Date(2025, 11, 10), 1208971.11, 608599.27, ],
-[new Date(2025, 11, 12), 1211464.31, 608599.27, ],
-[new Date(2025, 11, 13), 1224756, 607093.13, ],
-[new Date(2025, 11, 14), 344830.27, 607093.13, ],
-[new Date(2025, 11, 15), 1064237.55, 607093.13, ],
-[new Date(2025, 11, 16), 1016243, 607093.13, ],
-[new Date(2025, 11, 17), 807988.17, 607093.13, ],
-[new Date(2025, 11, 18), 248109.45, 607093.13, ],
-[new Date(2025, 11, 19), 687193.08, 607093.13, ],
-[new Date(2025, 11, 20), 267362.87, 596441.22, ],
-[new Date(2025, 11, 21), 597574.16, 596441.22, ],
-[new Date(2025, 11, 22), 259921.54, 596441.22, ],
-[new Date(2025, 11, 23), 935014.22, 596441.22, ],
-[new Date(2025, 11, 24), 884401.32, 594935.08, ],
-[new Date(2025, 11, 25), 635516.04, 591116.33, ],
-[new Date(2025, 11, 27), 819506.23, 589610.19, ],
-[new Date(2025, 11, 30), 833588.71, 576674.67, ],
-[new Date(2025, 11, 31), 1201381.31, 569413.68, ],
-]);
-
-// Set Options
-var options1 = {
-title: 'Consolide: Tresorerie / Emprunts',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-format: 'd-MMM',
-gridlines: {count: 321},
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data2 = new google.visualization.DataTable();
-data2.addColumn('date', 'Date');
-data2.addColumn('number', 'Tresorerie');
-
-data2.addRows([
 [new Date(2024, 0, 01), 1227239.63, ],
 [new Date(2024, 0, 02), 706164.87, ],
 [new Date(2024, 0, 03), 968321.08, ],
@@ -793,7 +447,7 @@ data2.addRows([
 ]);
 
 // Set Options
-var options2 = {
+var options1 = {
 title: 'Consolide: Tresorerie',
 backgroundColor:'Lavender',
 height: 400,
@@ -806,11 +460,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data3 = new google.visualization.DataTable();
-data3.addColumn('date', 'Date');
-data3.addColumn('number', 'Emprunts');
+var data2 = new google.visualization.DataTable();
+data2.addColumn('date', 'Date');
+data2.addColumn('number', 'Emprunts');
 
-data3.addRows([
+data2.addRows([
 [new Date(2024, 0, 01), 595684.21, ],
 [new Date(2024, 0, 02), 593794.18, ],
 [new Date(2024, 0, 03), 592040.22, ],
@@ -944,7 +598,7 @@ data3.addRows([
 ]);
 
 // Set Options
-var options3 = {
+var options2 = {
 title: 'Consolide: Emprunts',
 backgroundColor:'Lavender',
 height: 400,
@@ -957,14 +611,14 @@ gridlines: {color: 'none'},
 }
 };
 
-var data4 = new google.visualization.DataTable();
-data4.addColumn('number', 'Month');
-data4.addColumn('number', '2021');
-data4.addColumn('number', '2022');
-data4.addColumn('number', '2023');
-data4.addColumn('number', '2024');
+var data3 = new google.visualization.DataTable();
+data3.addColumn('number', 'Month');
+data3.addColumn('number', '2021');
+data3.addColumn('number', '2022');
+data3.addColumn('number', '2023');
+data3.addColumn('number', '2024');
 
-data4.addRows([
+data3.addRows([
 [ 0, 869618.37, 871202.62, 906662.37, 765111.7, ],
 [ 1, 878323.94, 872792.74, 883985.06, 780693.84, ],
 [ 2, 990930.11, 1040841.09, 1014279.75, 871644.67, ],
@@ -980,7 +634,7 @@ data4.addRows([
 ]);
 
 // Set Options
-var options4 = {
+var options3 = {
 title: 'Consolide: CA',
 backgroundColor:'Lavender',
 height: 400,
@@ -993,22 +647,22 @@ gridlines: {color: 'none'},
 }
 };
 
-var data5 = new google.visualization.DataTable();
-data5.addColumn('number', 'Year');
-data5.addColumn('number', 'SCHENKER');
-data5.addColumn('number', 'MONDIAL');
-data5.addColumn('number', 'MILLO');
-data5.addColumn('number', 'LOGIDIS');
-data5.addColumn('number', 'LECASUD');
-data5.addColumn('number', 'JOYAU');
-data5.addColumn('number', 'ITMLAI');
-data5.addColumn('number', 'EASYDIS');
-data5.addColumn('number', 'DIVERS');
-data5.addColumn('number', 'COCCINELLE');
-data5.addColumn('number', 'BL');
-data5.addColumn('number', 'AUCHAN');
+var data4 = new google.visualization.DataTable();
+data4.addColumn('number', 'Year');
+data4.addColumn('number', 'SCHENKER');
+data4.addColumn('number', 'MONDIAL');
+data4.addColumn('number', 'MILLO');
+data4.addColumn('number', 'LOGIDIS');
+data4.addColumn('number', 'LECASUD');
+data4.addColumn('number', 'JOYAU');
+data4.addColumn('number', 'ITMLAI');
+data4.addColumn('number', 'EASYDIS');
+data4.addColumn('number', 'DIVERS');
+data4.addColumn('number', 'COCCINELLE');
+data4.addColumn('number', 'BL');
+data4.addColumn('number', 'AUCHAN');
 
-data5.addRows([
+data4.addRows([
 [2021, 0, 0, 0, 1722189.94, 5714472.06, 378046.46, 526993.24, 778946.44, 1180254.28, 0, 1025046.81, 0, ],
 [2022, 36824.58, 350, 210710.66, 2317046.01, 5980826.4, 493480, 545179.15, 606752.31, 1891105.6, 243.15, 337174.05, 0, ],
 [2023, 0, 320, 29671.22, 2235141.35, 5501452.11, 456880.75, 506609.66, 526329.29, 1675368.1, 136.4, 436763.62, 0, ],
@@ -1016,7 +670,7 @@ data5.addRows([
 ]);
 
 // Set Options
-var options5 = {
+var options4 = {
 title: 'Consolide: CA Clients par Annee',
 backgroundColor:'Lavender',
 height: 550,
@@ -1024,6 +678,38 @@ isStacked: true,
 hAxis: {
 format: '',
 gridlines: {count: 4},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data5 = new google.visualization.DataTable();
+data5.addColumn('number', 'Month');
+data5.addColumn('number', '2021');
+data5.addColumn('number', '2022');
+data5.addColumn('number', '2023');
+data5.addColumn('number', '2024');
+
+data5.addRows([
+[ 0, , , , -420280, ],
+[ 5, , 68113, -9807, 177248, ],
+[ 6, , 133762, 187541, 251286, ],
+[ 7, 552804, 307618, 162642, 154616, ],
+[ 8, , 308965, 160474, 203892, ],
+[ 9, , 345556, 248214, 201768, ],
+[ 10, , , 221663, 161267, ],
+[ 11, 418762, 362725, 144618, 90933, ],
+]);
+
+// Set Options
+var options5 = {
+title: 'Consolide: Resultat',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+gridlines: {count: 12},
+ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
 },
 vAxis: {
 gridlines: {color: 'none'},
@@ -1038,38 +724,6 @@ data6.addColumn('number', '2023');
 data6.addColumn('number', '2024');
 
 data6.addRows([
-[ 0, , , , -420280, ],
-[ 5, , 68113, -9807, 177248, ],
-[ 6, , 133762, 187541, 251286, ],
-[ 7, 552804, 307618, 162642, 154616, ],
-[ 8, , 308965, 160474, 203892, ],
-[ 9, , 345556, 248214, 201768, ],
-[ 10, , , 221663, 161267, ],
-[ 11, 418762, 362725, 144618, 90933, ],
-]);
-
-// Set Options
-var options6 = {
-title: 'Consolide: Resultat',
-backgroundColor:'Lavender',
-height: 400,
-hAxis: {
-gridlines: {count: 12},
-ticks: [{v: 0, f:'Jan'},{v: 1, f:'Feb'},{v: 2, f:'Mar'},{v: 3, f:'Apr'},{v: 4, f:'May'},{v: 5, f:'Jun'},{v: 6, f:'Jul'},{v: 7, f:'Aug'},{v: 8, f:'Sep'},{v: 9, f:'Oct'},{v: 10, f:'Nov'},{v: 11, f:'Dec'}],
-},
-vAxis: {
-gridlines: {color: 'none'},
-}
-};
-
-var data7 = new google.visualization.DataTable();
-data7.addColumn('number', 'Month');
-data7.addColumn('number', '2021');
-data7.addColumn('number', '2022');
-data7.addColumn('number', '2023');
-data7.addColumn('number', '2024');
-
-data7.addRows([
 [ 0, , , , -293057, ],
 [ 5, , 471569, 544049, 501510, ],
 [ 6, , 646191, 817460, 674503, ],
@@ -1081,7 +735,7 @@ data7.addRows([
 ]);
 
 // Set Options
-var options7 = {
+var options6 = {
 title: 'Consolide: EBE',
 backgroundColor:'Lavender',
 height: 400,
@@ -1094,11 +748,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data8 = new google.visualization.DataTable();
-data8.addColumn('date', 'Date');
-data8.addColumn('number', 'Valorisation');
+var data7 = new google.visualization.DataTable();
+data7.addColumn('date', 'Date');
+data7.addColumn('number', 'Valorisation');
 
-data8.addRows([
+data7.addRows([
 [new Date(2020, 11, 31), 7221727.76, ],
 [new Date(2021, 11, 31), 8221356.35, ],
 [new Date(2022, 11, 31), 8463211.56, ],
@@ -1124,7 +778,7 @@ data8.addRows([
 ]);
 
 // Set Options
-var options8 = {
+var options7 = {
 title: 'Portefeuille SA',
 backgroundColor:'Lavender',
 height: 400,
@@ -1137,11 +791,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data9 = new google.visualization.DataTable();
-data9.addColumn('date', 'Date');
-data9.addColumn('number', '+/- Value');
+var data8 = new google.visualization.DataTable();
+data8.addColumn('date', 'Date');
+data8.addColumn('number', '+/- Value');
 
-data9.addRows([
+data8.addRows([
 [new Date(2020, 11, 31), 627917.28, ],
 [new Date(2021, 11, 31), 835494.29, ],
 [new Date(2022, 11, 31), 464785.47, ],
@@ -1167,7 +821,7 @@ data9.addRows([
 ]);
 
 // Set Options
-var options9 = {
+var options8 = {
 title: 'Portefeuille SA',
 backgroundColor:'Lavender',
 height: 400,
@@ -1187,9 +841,9 @@ const chart2 = new google.visualization.LineChart(document.getElementById('MyCha
 chart2.draw(data2, options2);
 const chart3 = new google.visualization.LineChart(document.getElementById('MyChart3'));
 chart3.draw(data3, options3);
-const chart4 = new google.visualization.LineChart(document.getElementById('MyChart4'));
+const chart4 = new google.visualization.ColumnChart(document.getElementById('MyChart4'));
 chart4.draw(data4, options4);
-const chart5 = new google.visualization.ColumnChart(document.getElementById('MyChart5'));
+const chart5 = new google.visualization.LineChart(document.getElementById('MyChart5'));
 chart5.draw(data5, options5);
 const chart6 = new google.visualization.LineChart(document.getElementById('MyChart6'));
 chart6.draw(data6, options6);
@@ -1197,8 +851,6 @@ const chart7 = new google.visualization.LineChart(document.getElementById('MyCha
 chart7.draw(data7, options7);
 const chart8 = new google.visualization.LineChart(document.getElementById('MyChart8'));
 chart8.draw(data8, options8);
-const chart9 = new google.visualization.LineChart(document.getElementById('MyChart9'));
-chart9.draw(data9, options9);
 
 }
 </script>
