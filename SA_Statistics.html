@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Wed Mar  5 09:08:47 CET 2025 </h1>
+<h1> Statistiques - Generated: Wed Mar  5 11:45:50 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -125,24 +125,30 @@ var data1 = new google.visualization.DataTable();
 data1.addColumn('number', 'Year');
 data1.addColumn('number', 'PLACEMENTS');
 data1.addColumn('number', 'MARQUE');
-data1.addColumn('number', 'IMPOTS');
 data1.addColumn('number', 'IMMOBILIER');
 data1.addColumn('number', 'FILIALES');
 data1.addColumn('number', 'COMMUN');
 
 data1.addRows([
-[2024, 311875.51, 107393.46, -176387, 172204.37, 115261, -36825.62, ],
+[2017, 344016.08, 126210.09, 223934.04, 629900, 370976.500000001, ],
+[2018, -281161.72, 127745.53, 234359.49, 454928, 240436.59, ],
+[2019, 326723.29, 117090.39, 247155.52, 519948, 62272.97, ],
+[2020, 70698.26, 111190.34, 192379.52, 572000, -15609.93, ],
+[2021, 196808.88, 112949.18, 181155.79, 575000, -25869.67, ],
+[2022, -52943.62, 121974.71, 240441.47, 384000, -17128.21, ],
+[2023, 221663.64, 113890.68, 452732.13, 280237.48, -38727.77, ],
+[2024, 311875.51, 107393.46, 172204.37, 115261, -36825.62, ],
 ]);
 
 // Set Options
 var options1 = {
-title: 'SA: Resultats par Annee',
+title: 'Holding: Resultats par Annee',
 backgroundColor:'Lavender',
 height: 550,
 isStacked: true,
 hAxis: {
 format: '',
-gridlines: {count: 1},
+gridlines: {count: 8},
 },
 vAxis: {
 gridlines: {color: 'none'},
