@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - Generated: Sat Mar  8 08:17:57 CET 2025 </h1>
+<h1> Statistiques - Generated: Sat Mar  8 10:39:50 CET 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -86,10 +86,10 @@ background-color: #1abc9c;
 <body>
 <div class="folders">
 <div
-id="MyChart1" class="folder" style="flex-basis: 100%">
+id="MyChart1" class="folder" style="flex-basis: 50%">
 </div>
 <div
-id="MyChart2" class="folder" style="flex-basis: 100%">
+id="MyChart2" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart3" class="folder" style="flex-basis: 100%">
@@ -101,16 +101,22 @@ id="MyChart4" class="folder" style="flex-basis: 100%">
 id="MyChart5" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart6" class="folder" style="flex-basis: 50%">
+id="MyChart6" class="folder" style="flex-basis: 100%">
 </div>
 <div
-id="MyChart7" class="folder" style="flex-basis: 50%">
+id="MyChart7" class="folder" style="flex-basis: 100%">
 </div>
 <div
 id="MyChart8" class="folder" style="flex-basis: 50%">
 </div>
 <div
 id="MyChart9" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart10" class="folder" style="flex-basis: 50%">
+</div>
+<div
+id="MyChart11" class="folder" style="flex-basis: 50%">
 </div>
 </div>
 
@@ -122,14 +128,108 @@ function drawCallback() {
 
 // Set Data
 var data1 = new google.visualization.DataTable();
-data1.addColumn('number', 'Year');
-data1.addColumn('number', 'PLACEMENTS');
-data1.addColumn('number', 'MARQUE');
-data1.addColumn('number', 'IMMOBILIER');
-data1.addColumn('number', 'FILIALES');
-data1.addColumn('number', 'COMMUN');
+data1.addColumn('date', 'Date');
+data1.addColumn('number', 'Valorisation');
 
 data1.addRows([
+[new Date(2025, 1, 11), 9318605.232578, ],
+[new Date(2025, 1, 12), 9324023.92523532, ],
+[new Date(2025, 1, 13), 9328580.55513332, ],
+[new Date(2025, 1, 14), 9328659.208169, ],
+[new Date(2025, 1, 15), 9330309.05665052, ],
+[new Date(2025, 1, 16), 9331205.83131152, ],
+[new Date(2025, 1, 17), 9329240.33017152, ],
+[new Date(2025, 1, 18), 9334830.92730068, ],
+[new Date(2025, 1, 19), 9346094.60864412, ],
+[new Date(2025, 1, 20), 9348465.29481212, ],
+[new Date(2025, 1, 21), 9351090.6316538, ],
+[new Date(2025, 1, 22), 9365480.17928576, ],
+[new Date(2025, 1, 23), 9360635.27275516, ],
+[new Date(2025, 1, 24), 9357972.61275516, ],
+[new Date(2025, 1, 25), 9365330.20443516, ],
+[new Date(2025, 1, 26), 9364516.7741374, ],
+[new Date(2025, 1, 27), 9361918.9073424, ],
+[new Date(2025, 1, 28), 9362447.60733288, ],
+[new Date(2025, 2, 01), 9362801.16888588, ],
+[new Date(2025, 2, 02), 9369866.6452768, ],
+[new Date(2025, 2, 03), 9369126.1289268, ],
+[new Date(2025, 2, 04), 9366694.50590124, ],
+[new Date(2025, 2, 05), 9369641.35815352, ],
+[new Date(2025, 2, 06), 9355007.86463468, ],
+[new Date(2025, 2, 07), 9351775.75384568, ],
+[new Date(2025, 2, 08), 9345394.38751624, ],
+]);
+
+// Set Options
+var options1 = {
+title: 'Portefeuille SA (depuis 01/01/2025 )',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+format: 'd/M/yy',
+gridlines: {count: 15},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data2 = new google.visualization.DataTable();
+data2.addColumn('date', 'Date');
+data2.addColumn('number', '+/- Value');
+
+data2.addRows([
+[new Date(2025, 1, 11), 1015017.552578, ],
+[new Date(2025, 1, 12), 1020436.24523532, ],
+[new Date(2025, 1, 13), 1024992.87513332, ],
+[new Date(2025, 1, 14), 1025071.528169, ],
+[new Date(2025, 1, 15), 1026721.37665052, ],
+[new Date(2025, 1, 16), 1027618.15131152, ],
+[new Date(2025, 1, 17), 1025652.65017152, ],
+[new Date(2025, 1, 18), 1031243.24730068, ],
+[new Date(2025, 1, 19), 1042506.92864412, ],
+[new Date(2025, 1, 20), 1044877.61481212, ],
+[new Date(2025, 1, 21), 1047502.9516538, ],
+[new Date(2025, 1, 22), 1061892.49928576, ],
+[new Date(2025, 1, 23), 1057047.59275516, ],
+[new Date(2025, 1, 24), 1054384.93275516, ],
+[new Date(2025, 1, 25), 1061742.52443516, ],
+[new Date(2025, 1, 26), 1060929.0941374, ],
+[new Date(2025, 1, 27), 1058331.2273424, ],
+[new Date(2025, 1, 28), 1058859.92733288, ],
+[new Date(2025, 2, 01), 1059213.48888588, ],
+[new Date(2025, 2, 02), 1066278.9652768, ],
+[new Date(2025, 2, 03), 1065538.4489268, ],
+[new Date(2025, 2, 04), 1063106.82590124, ],
+[new Date(2025, 2, 05), 1066053.67815352, ],
+[new Date(2025, 2, 06), 1051420.18463468, ],
+[new Date(2025, 2, 07), 1048188.07384568, ],
+[new Date(2025, 2, 08), 1041806.70751624, ],
+]);
+
+// Set Options
+var options2 = {
+title: 'Portefeuille SA (depuis 01/01/2025 )',
+backgroundColor:'Lavender',
+height: 400,
+hAxis: {
+format: 'd/M/yy',
+gridlines: {count: 15},
+},
+vAxis: {
+gridlines: {color: 'none'},
+}
+};
+
+var data3 = new google.visualization.DataTable();
+data3.addColumn('number', 'Year');
+data3.addColumn('number', 'PLACEMENTS');
+data3.addColumn('number', 'MARQUE');
+data3.addColumn('number', 'IMMOBILIER');
+data3.addColumn('number', 'FILIALES');
+data3.addColumn('number', 'COMMUN');
+
+data3.addRows([
 [2017, 344016.08, 126210.09, 223934.04, 629900, 370976.5, ],
 [2018, -281161.72, 127745.53, 234359.49, 454928, 240436.59, ],
 [2019, 326723.29, 117090.39, 247155.52, 519948, 62272.97, ],
@@ -141,7 +241,7 @@ data1.addRows([
 ]);
 
 // Set Options
-var options1 = {
+var options3 = {
 title: 'Holding: Resultats par Annee',
 backgroundColor:'Lavender',
 height: 550,
@@ -155,11 +255,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data2 = new google.visualization.DataTable();
-data2.addColumn('date', 'Date');
-data2.addColumn('number', '2024');
+var data4 = new google.visualization.DataTable();
+data4.addColumn('date', 'Date');
+data4.addColumn('number', '2024');
 
-data2.addRows([
+data4.addRows([
 [new Date(2025, 0, 01), 1227239.63, ],
 [new Date(2025, 0, 02), 706164.87, ],
 [new Date(2025, 0, 03), 968321.08, ],
@@ -484,7 +584,7 @@ data2.addRows([
 ]);
 
 // Set Options
-var options2 = {
+var options4 = {
 title: 'Consolide: Tresorerie',
 backgroundColor:'Lavender',
 height: 400,
@@ -497,11 +597,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data3 = new google.visualization.DataTable();
-data3.addColumn('date', 'Date');
-data3.addColumn('number', '2024');
+var data5 = new google.visualization.DataTable();
+data5.addColumn('date', 'Date');
+data5.addColumn('number', '2024');
 
-data3.addRows([
+data5.addRows([
 [new Date(2025, 0, 01), 595684.21, ],
 [new Date(2025, 0, 02), 593794.18, ],
 [new Date(2025, 0, 03), 592040.22, ],
@@ -635,7 +735,7 @@ data3.addRows([
 ]);
 
 // Set Options
-var options3 = {
+var options5 = {
 title: 'Consolide: Emprunts',
 backgroundColor:'Lavender',
 height: 400,
@@ -648,14 +748,14 @@ gridlines: {color: 'none'},
 }
 };
 
-var data4 = new google.visualization.DataTable();
-data4.addColumn('number', 'Month');
-data4.addColumn('number', '2021');
-data4.addColumn('number', '2022');
-data4.addColumn('number', '2023');
-data4.addColumn('number', '2024');
+var data6 = new google.visualization.DataTable();
+data6.addColumn('number', 'Month');
+data6.addColumn('number', '2021');
+data6.addColumn('number', '2022');
+data6.addColumn('number', '2023');
+data6.addColumn('number', '2024');
 
-data4.addRows([
+data6.addRows([
 [ 0, 869618.37, 871202.62, 906662.37, 765111.7, ],
 [ 1, 878323.94, 872792.74, 883985.06, 780693.84, ],
 [ 2, 990930.11, 1040841.09, 1014279.75, 871644.67, ],
@@ -671,7 +771,7 @@ data4.addRows([
 ]);
 
 // Set Options
-var options4 = {
+var options6 = {
 title: 'Consolide: CA',
 backgroundColor:'Lavender',
 height: 400,
@@ -684,22 +784,22 @@ gridlines: {color: 'none'},
 }
 };
 
-var data5 = new google.visualization.DataTable();
-data5.addColumn('number', 'Year');
-data5.addColumn('number', 'SCHENKER');
-data5.addColumn('number', 'MONDIAL');
-data5.addColumn('number', 'MILLO');
-data5.addColumn('number', 'LOGIDIS');
-data5.addColumn('number', 'LECASUD');
-data5.addColumn('number', 'JOYAU');
-data5.addColumn('number', 'ITMLAI');
-data5.addColumn('number', 'EASYDIS');
-data5.addColumn('number', 'DIVERS');
-data5.addColumn('number', 'COCCINELLE');
-data5.addColumn('number', 'BL');
-data5.addColumn('number', 'AUCHAN');
+var data7 = new google.visualization.DataTable();
+data7.addColumn('number', 'Year');
+data7.addColumn('number', 'SCHENKER');
+data7.addColumn('number', 'MONDIAL');
+data7.addColumn('number', 'MILLO');
+data7.addColumn('number', 'LOGIDIS');
+data7.addColumn('number', 'LECASUD');
+data7.addColumn('number', 'JOYAU');
+data7.addColumn('number', 'ITMLAI');
+data7.addColumn('number', 'EASYDIS');
+data7.addColumn('number', 'DIVERS');
+data7.addColumn('number', 'COCCINELLE');
+data7.addColumn('number', 'BL');
+data7.addColumn('number', 'AUCHAN');
 
-data5.addRows([
+data7.addRows([
 [2021, 0, 0, 0, 1722189.94, 5714472.06, 378046.46, 526993.24, 778946.44, 1180254.28, 0, 1025046.81, 0, ],
 [2022, 36824.58, 350, 210710.66, 2317046.01, 5980826.4, 493480, 545179.15, 606752.31, 1891105.6, 243.15, 337174.05, 0, ],
 [2023, 0, 320, 29671.22, 2235141.35, 5501452.11, 456880.75, 506609.66, 526329.29, 1675368.1, 136.4, 436763.62, 0, ],
@@ -707,7 +807,7 @@ data5.addRows([
 ]);
 
 // Set Options
-var options5 = {
+var options7 = {
 title: 'Consolide: CA Clients par Annee',
 backgroundColor:'Lavender',
 height: 550,
@@ -721,14 +821,14 @@ gridlines: {color: 'none'},
 }
 };
 
-var data6 = new google.visualization.DataTable();
-data6.addColumn('number', 'Month');
-data6.addColumn('number', '2021');
-data6.addColumn('number', '2022');
-data6.addColumn('number', '2023');
-data6.addColumn('number', '2024');
+var data8 = new google.visualization.DataTable();
+data8.addColumn('number', 'Month');
+data8.addColumn('number', '2021');
+data8.addColumn('number', '2022');
+data8.addColumn('number', '2023');
+data8.addColumn('number', '2024');
 
-data6.addRows([
+data8.addRows([
 [ 0, , , , -420280, ],
 [ 5, , 68113, -9807, 177248, ],
 [ 6, , 133762, 187541, 251286, ],
@@ -740,7 +840,7 @@ data6.addRows([
 ]);
 
 // Set Options
-var options6 = {
+var options8 = {
 title: 'Consolide: Resultat',
 backgroundColor:'Lavender',
 height: 400,
@@ -753,14 +853,14 @@ gridlines: {color: 'none'},
 }
 };
 
-var data7 = new google.visualization.DataTable();
-data7.addColumn('number', 'Month');
-data7.addColumn('number', '2021');
-data7.addColumn('number', '2022');
-data7.addColumn('number', '2023');
-data7.addColumn('number', '2024');
+var data9 = new google.visualization.DataTable();
+data9.addColumn('number', 'Month');
+data9.addColumn('number', '2021');
+data9.addColumn('number', '2022');
+data9.addColumn('number', '2023');
+data9.addColumn('number', '2024');
 
-data7.addRows([
+data9.addRows([
 [ 0, , , , -291668, ],
 [ 5, , 474094, 546247, 506098, ],
 [ 6, , 648716, 820239, 679786, ],
@@ -772,7 +872,7 @@ data7.addRows([
 ]);
 
 // Set Options
-var options7 = {
+var options9 = {
 title: 'Consolide: EBE',
 backgroundColor:'Lavender',
 height: 400,
@@ -785,11 +885,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data8 = new google.visualization.DataTable();
-data8.addColumn('date', 'Date');
-data8.addColumn('number', 'Valorisation');
+var data10 = new google.visualization.DataTable();
+data10.addColumn('date', 'Date');
+data10.addColumn('number', 'Valorisation');
 
-data8.addRows([
+data10.addRows([
 [new Date(2020, 11, 31), 7221727.76, ],
 [new Date(2021, 11, 31), 8221356.35, ],
 [new Date(2022, 11, 31), 8463211.56, ],
@@ -824,7 +924,7 @@ data8.addRows([
 ]);
 
 // Set Options
-var options8 = {
+var options10 = {
 title: 'Portefeuille SA',
 backgroundColor:'Lavender',
 height: 400,
@@ -837,11 +937,11 @@ gridlines: {color: 'none'},
 }
 };
 
-var data9 = new google.visualization.DataTable();
-data9.addColumn('date', 'Date');
-data9.addColumn('number', '+/- Value');
+var data11 = new google.visualization.DataTable();
+data11.addColumn('date', 'Date');
+data11.addColumn('number', '+/- Value');
 
-data9.addRows([
+data11.addRows([
 [new Date(2020, 11, 31), 627917.28, ],
 [new Date(2021, 11, 31), 835494.29, ],
 [new Date(2022, 11, 31), 464785.47, ],
@@ -876,7 +976,7 @@ data9.addRows([
 ]);
 
 // Set Options
-var options9 = {
+var options11 = {
 title: 'Portefeuille SA',
 backgroundColor:'Lavender',
 height: 400,
@@ -890,24 +990,28 @@ gridlines: {color: 'none'},
 };
 
 // Draw
-const chart1 = new google.visualization.ColumnChart(document.getElementById('MyChart1'));
+const chart1 = new google.visualization.LineChart(document.getElementById('MyChart1'));
 chart1.draw(data1, options1);
 const chart2 = new google.visualization.LineChart(document.getElementById('MyChart2'));
 chart2.draw(data2, options2);
-const chart3 = new google.visualization.LineChart(document.getElementById('MyChart3'));
+const chart3 = new google.visualization.ColumnChart(document.getElementById('MyChart3'));
 chart3.draw(data3, options3);
 const chart4 = new google.visualization.LineChart(document.getElementById('MyChart4'));
 chart4.draw(data4, options4);
-const chart5 = new google.visualization.ColumnChart(document.getElementById('MyChart5'));
+const chart5 = new google.visualization.LineChart(document.getElementById('MyChart5'));
 chart5.draw(data5, options5);
 const chart6 = new google.visualization.LineChart(document.getElementById('MyChart6'));
 chart6.draw(data6, options6);
-const chart7 = new google.visualization.LineChart(document.getElementById('MyChart7'));
+const chart7 = new google.visualization.ColumnChart(document.getElementById('MyChart7'));
 chart7.draw(data7, options7);
 const chart8 = new google.visualization.LineChart(document.getElementById('MyChart8'));
 chart8.draw(data8, options8);
 const chart9 = new google.visualization.LineChart(document.getElementById('MyChart9'));
 chart9.draw(data9, options9);
+const chart10 = new google.visualization.LineChart(document.getElementById('MyChart10'));
+chart10.draw(data10, options10);
+const chart11 = new google.visualization.LineChart(document.getElementById('MyChart11'));
+chart11.draw(data11, options11);
 
 }
 </script>
