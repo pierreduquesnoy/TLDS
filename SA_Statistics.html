@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:Lavender;">
-<h1> Statistiques - EUR - Generated: Sun Jun  8 06:54:58 CEST 2025 </h1>
+<h1> Statistiques - EUR - Generated: Mon Jun  9 06:46:00 CEST 2025 </h1>
 <p> </p>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -223,6 +223,7 @@ data1.addRows([
 [new Date(2025, 5, 06), 9471990.37397138, ],
 [new Date(2025, 5, 07), 9473072.94896784, ],
 [new Date(2025, 5, 08), 9474889.17176884, ],
+[new Date(2025, 5, 09), 9474966.80091884, ],
 ]);
 
 // Set Options
@@ -335,6 +336,7 @@ data2.addRows([
 [new Date(2025, 5, 06), 985744.97397138, ],
 [new Date(2025, 5, 07), 986827.54896784, ],
 [new Date(2025, 5, 08), 988643.77176884, ],
+[new Date(2025, 5, 09), 988721.40091884, ],
 ]);
 
 // Set Options
@@ -365,8 +367,8 @@ data3.addRows([
 [2019, 326723.29, 117090.39, 247155.52, 519948, 62272.97, ],
 [2020, 70698.26, 111190.34, 192379.52, 572000, -15609.93, ],
 [2021, 196808.88, 112949.18, 181155.79, 575000, -25869.67, ],
-[2022, -52943.62, 121974.71, 240441.47, 384000, -17128.21, ],
-[2023, 221663.64, 113890.68, 452732.13, 280237.48, -38727.77, ],
+[2022, -52943.62, 121974.71, 240441.47, 384000, -17128.2100000001, ],
+[2023, 221663.64, 113890.68, 452732.13, 280237.48, -38727.7700000001, ],
 [2024, 311875.51, 107393.46, 172204.37, 115261, -36825.62, ],
 [2025, 221542.79, 0, 123734.43, 0, -56429.42, ],
 ]);
@@ -1059,8 +1061,23 @@ gridlines: {color: 'none'},
 
 var data8 = new google.visualization.DataTable();
 data8.addColumn('number', 'Month');
+data8.addColumn('number', '2021');
+data8.addColumn('number', '2022');
+data8.addColumn('number', '2023');
+data8.addColumn('number', '2024');
+data8.addColumn('number', '2025');
 
 data8.addRows([
+[ 0, , , , -420280, , ],
+[ 1, , , , , , ],
+[ 2, , , , , , ],
+[ 5, , 68113, -9807, 177248, , ],
+[ 6, , 133762, 187541, 251286, , ],
+[ 7, 552804, 307618, 162642, 154616, , ],
+[ 8, , 308965, 160474, 203892, , ],
+[ 9, , 345556, 248214, 201768, , ],
+[ 10, , , 221663, 161267, , ],
+[ 11, 418762, 362725, 144618, 90933, , ],
 ]);
 
 // Set Options
@@ -1079,8 +1096,23 @@ gridlines: {color: 'none'},
 
 var data9 = new google.visualization.DataTable();
 data9.addColumn('number', 'Month');
+data9.addColumn('number', '2021');
+data9.addColumn('number', '2022');
+data9.addColumn('number', '2023');
+data9.addColumn('number', '2024');
+data9.addColumn('number', '2025');
 
 data9.addRows([
+[ 0, , , , -291668, , ],
+[ 1, , , , , , ],
+[ 2, , , , , , ],
+[ 5, , 474094, 546247, 506098, , ],
+[ 6, , 648716, 820239, 679786, , ],
+[ 7, 907168, 833404, 895928, 656244, , ],
+[ 8, , 902382, 926475, 750844, , ],
+[ 9, , 1041179, 1070872, 854943, , ],
+[ 10, , , 1136470, 916475, , ],
+[ 11, 1161714, 1241410, 1043215, 950800, , ],
 ]);
 
 // Set Options
@@ -1198,6 +1230,7 @@ data10.addRows([
 [new Date(2025, 5, 06), 9471990.37397138, ],
 [new Date(2025, 5, 07), 9473072.94896784, ],
 [new Date(2025, 5, 08), 9474889.17176884, ],
+[new Date(2025, 5, 09), 9474966.80091884, ],
 ]);
 
 // Set Options
@@ -1315,6 +1348,7 @@ data11.addRows([
 [new Date(2025, 5, 06), 985744.97397138, ],
 [new Date(2025, 5, 07), 986827.54896784, ],
 [new Date(2025, 5, 08), 988643.77176884, ],
+[new Date(2025, 5, 09), 988721.40091884, ],
 ]);
 
 // Set Options
