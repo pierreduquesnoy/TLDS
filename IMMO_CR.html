@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<title>CR Previsionnel</title>
+<link rel="icon" type="image/png" href="icon-idee.png" />
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h2 {
+  margin-left: 20px;
+  line-height:20px;
+}
+h3 {
+  margin-left: 40px;
+  line-height:20px;
+}
+h4 {
+  margin-left: 60px;
+  line-height:16px;
+}
+h5 {
+  margin-left: 100px;
+  line-height:14px;
+}
+h6 {
+  margin-left: 120px;
+  line-height:12px;
+}
+</style>
+</head>
+<script> 
+function getParams() {
+    var idx = document.URL.indexOf('?');
+    var params = new Array();
+    if (idx != -1) {
+        var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+        for (var i=0; i<pairs.length; i++) {
+            nameVal = pairs[i].split('=');
+            params[nameVal[0]] = nameVal[1];
+        }
+    }
+    return params;
+}
+</script> 
+
+<button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
+<button                 onclick="history.back()">Back to Previous Page</button>
+<body onload="MyOnLoadFunction();" style="background-color:white;">
+<h1> Date=2025.06.30 - Generated: Tue Sep 23 06:56:38 CEST 2025 </h1>
+<p> </p>
+<p> Par centres </p>
+<table   style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="background-color:black;color:white;border-style:solid;">Centre</td>
+        <td style="background-color:black;color:white;border-style:solid;">Situation</td>
+        <td style="background-color:black;color:white;border-style:solid;">Extrapolee</td>
+        <td style="background-color:black;color:white;border-style:solid;">Modifiee</td>
+        <td style="background-color:black;color:white;border-style:solid;">Cloture 2024</td>
+    </tr>
+</table>
+<p> Par comptes </p>
+<table   style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="background-color:black;color:white;border-style:solid;">Compte</td>
+        <td style="background-color:black;color:white;border-style:solid;">Description</td>
+        <td style="background-color:black;color:white;border-style:solid;">Centre</td>
+        <td style="background-color:black;color:white;border-style:solid;">Situation</td>
+        <td style="background-color:black;color:white;border-style:solid;">Extrapolee</td>
+        <td style="background-color:black;color:white;border-style:solid;">Modifiee</td>
+        <td style="background-color:black;color:white;border-style:solid;">Cloture 2024</td>
+        <td style="background-color:black;color:white;border-style:solid;">Extrapolation</td>
+        <td style="background-color:black;color:white;border-style:solid;">Commentaire</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">Date</td>
+        <td style="border-style:solid;"></td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">30/06/2025</td>
+        <td style="text-align:right;border-style:solid;">31/12/2025</td>
+        <td style="text-align:right;border-style:solid;">31/12/2025</td>
+        <td style="text-align:right;border-style:solid;">31/12/2024</td>
+        <td style="border-style:solid;"></td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61100000</td>
+        <td style="border-style:solid;">RF DE SOD SA</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">-905</td>
+        <td style="text-align:right;border-style:solid;">-15 944</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">-14 734</td>
+        <td style="text-align:right;border-style:solid;">-15 944</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;">./workspace/MakeRF.pl -> Valeur(2025.06.30)=-7366.97 Extrapolee=-14733.94</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61112000</td>
+        <td style="border-style:solid;">Prest.Jurid+Immo de Sodlog</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-6 655</td>
+        <td style="border-style:solid;">Non Modifie</td>
+        <td style="border-style:solid;">PIERRE: DOIT DISPARAITRE</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61320000</td>
+        <td style="border-style:solid;">Locations immobilières</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-3 000</td>
+        <td style="text-align:right;border-style:solid;">-6 000</td>
+        <td style="text-align:right;border-style:solid;">-6 000</td>
+        <td style="text-align:right;border-style:solid;">-6 000</td>
+        <td style="border-style:solid;">Lineaire</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61400000</td>
+        <td style="border-style:solid;">Charges locatives et copropr.</td>
+        <td style="border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">4 907</td>
+        <td style="text-align:right;border-style:solid;">-4 036</td>
+        <td style="text-align:right;border-style:solid;">-4 036</td>
+        <td style="text-align:right;border-style:solid;">-4 036</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61560000</td>
+        <td style="border-style:solid;">Maintenance</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-175</td>
+        <td style="text-align:right;border-style:solid;">-175</td>
+        <td style="text-align:right;border-style:solid;">-175</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="border-style:solid;">Non Modifie</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61610000</td>
+        <td style="border-style:solid;">Multirisques</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-796</td>
+        <td style="text-align:right;border-style:solid;">-796</td>
+        <td style="text-align:right;border-style:solid;">-796</td>
+        <td style="text-align:right;border-style:solid;">-724</td>
+        <td style="border-style:solid;">Non Lineaire</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62260000</td>
+        <td style="border-style:solid;">Honoraires</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-1 390</td>
+        <td style="text-align:right;border-style:solid;">-4 140</td>
+        <td style="text-align:right;border-style:solid;">-4 140</td>
+        <td style="text-align:right;border-style:solid;">-4 140</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62270000</td>
+        <td style="border-style:solid;">Frais d'actes et contentieux</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-679</td>
+        <td style="border-style:solid;">Non Modifie</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62700000</td>
+        <td style="border-style:solid;">Services bancaires et assimilé</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-409</td>
+        <td style="text-align:right;border-style:solid;">-739</td>
+        <td style="text-align:right;border-style:solid;">-739</td>
+        <td style="text-align:right;border-style:solid;">-739</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">63512000</td>
+        <td style="border-style:solid;">Taxes foncières</td>
+        <td style="border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-4 751</td>
+        <td style="text-align:right;border-style:solid;">-4 751</td>
+        <td style="text-align:right;border-style:solid;">-4 751</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">63513000</td>
+        <td style="border-style:solid;">Autres impôts locaux</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-789</td>
+        <td style="text-align:right;border-style:solid;">-789</td>
+        <td style="text-align:right;border-style:solid;">-789</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">63520000</td>
+        <td style="border-style:solid;">TVA NON RECUPERABLE</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-4 740</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">-4 740</td>
+        <td style="text-align:right;border-style:solid;">-4 740</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;">SARA: TODO: Reconduit </td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">65800000</td>
+        <td style="border-style:solid;">Chge diverse gestion courante</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-0</td>
+        <td style="text-align:right;border-style:solid;">-0</td>
+        <td style="text-align:right;border-style:solid;">-0</td>
+        <td style="text-align:right;border-style:solid;">-0</td>
+        <td style="border-style:solid;">Non Modifie</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">66117000</td>
+        <td style="border-style:solid;">Intérêt dette ratt à particip.</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-7 410</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">-9 042</td>
+        <td style="text-align:right;border-style:solid;">-7 410</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;">./workspace/MakeAgios.pl -> Valeur(2025.06.30)=-4521.14 Extrapolee=-9042.28</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">68110000</td>
+        <td style="border-style:solid;">Dot.amortimmob incorp et corp.</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-33 279</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">-33 279</td>
+        <td style="text-align:right;border-style:solid;">-33 279</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;">PIERRE: Non Regular: Apparait dans les comptes au 31/08</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">69950000</td>
+        <td style="border-style:solid;">Carry-back</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">242</td>
+        <td style="text-align:right;border-style:solid;">242</td>
+        <td style="text-align:right;border-style:solid;">242</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70600016</td>
+        <td style="border-style:solid;">Loyer Kujbida</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">4 380</td>
+        <td style="text-align:right;border-style:solid;">8 760</td>
+        <td style="text-align:right;border-style:solid;">8 760</td>
+        <td style="text-align:right;border-style:solid;">8 760</td>
+        <td style="border-style:solid;">Lineaire</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70600017</td>
+        <td style="border-style:solid;">Loyer Montini</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">4 860</td>
+        <td style="text-align:right;border-style:solid;">4 860</td>
+        <td style="text-align:right;border-style:solid;">4 860</td>
+        <td style="text-align:right;border-style:solid;">9 720</td>
+        <td style="border-style:solid;">Non Modifie</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70600022</td>
+        <td style="border-style:solid;">Loyer Grenaut</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">4 440</td>
+        <td style="text-align:right;border-style:solid;">8 880</td>
+        <td style="text-align:right;border-style:solid;">8 880</td>
+        <td style="text-align:right;border-style:solid;">8 880</td>
+        <td style="border-style:solid;">Lineaire</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70600023</td>
+        <td style="border-style:solid;">Loyer Duhaubois</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">4 170</td>
+        <td style="text-align:right;border-style:solid;">8 340</td>
+        <td style="text-align:right;border-style:solid;">8 340</td>
+        <td style="text-align:right;border-style:solid;">8 340</td>
+        <td style="border-style:solid;">Lineaire</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70600025</td>
+        <td style="border-style:solid;">loyer Claessens</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">4 560</td>
+        <td style="text-align:right;border-style:solid;">9 120</td>
+        <td style="text-align:right;border-style:solid;">9 120</td>
+        <td style="text-align:right;border-style:solid;">9 120</td>
+        <td style="border-style:solid;">Lineaire</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70600027</td>
+        <td style="border-style:solid;">Loyer garages</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">750</td>
+        <td style="text-align:right;border-style:solid;">1 500</td>
+        <td style="text-align:right;border-style:solid;">1 500</td>
+        <td style="text-align:right;border-style:solid;">1 500</td>
+        <td style="border-style:solid;">Lineaire</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70800000</td>
+        <td style="border-style:solid;">frais de gestion loyers</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">14 948</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">15 913</td>
+        <td style="text-align:right;border-style:solid;">14 948</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;">./workspace/MakeLoyers.pl -> Valeur(2025.06.30)=7956.26 Extrapolee=15912.52</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">75800000</td>
+        <td style="border-style:solid;">Prodt divers gestion courante</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="border-style:solid;">Non Modifie</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">76110000</td>
+        <td style="border-style:solid;">Bénéfice sociétés ARTICLE 8</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;">Filiales</td>
+        <td style="text-align:right;border-style:solid;">3 000</td>
+        <td style="text-align:right;border-style:solid;">3 000</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">3 000</td>
+        <td style="text-align:right;border-style:solid;">3 000</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;">SARA: LEG: Reconduit </td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">76170000</td>
+        <td style="border-style:solid;">Revenus des créances rattaché</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">10 972</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">30 087</td>
+        <td style="text-align:right;border-style:solid;">10 972</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;">./workspace/MakeAgios.pl -> Valeur(2025.06.30)=15043.4 Extrapolee=30086.8</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">76170011</td>
+        <td style="border-style:solid;">Interets malmont I</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">2 219</td>
+        <td style="border-style:solid;">Non Modifie</td>
+        <td style="border-style:solid;">PIERRE: DOIT DISPARAITRE</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">76170012</td>
+        <td style="border-style:solid;">Interets malmont II</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">2 708</td>
+        <td style="border-style:solid;">Non Modifie</td>
+        <td style="border-style:solid;">PIERRE: DOIT DISPARAITRE</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">76170013</td>
+        <td style="border-style:solid;">Interets Carre Templiers</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">4 669</td>
+        <td style="border-style:solid;">Non Modifie</td>
+        <td style="border-style:solid;">PIERRE: DOIT DISPARAITRE</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">76170018</td>
+        <td style="border-style:solid;">interets Botticelli II</td>
+        <td style="background-color:lightgrey;color:black;;border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="background-color:lightgrey;color:black;text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">1 148</td>
+        <td style="border-style:solid;">Non Modifie</td>
+        <td style="border-style:solid;">PIERRE: DOIT DISPARAITRE</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">Resultat avant Impots</td>
+        <td style="background-color:darkgrey;color:white;;border-style:solid;"></td>
+        <td style="background-color:darkgrey;color:white;;border-style:solid;"></td>
+        <td style="background-color:darkgrey;color:white;text-align:right;border-style:solid;">24 392</td>
+        <td style="background-color:darkgrey;color:white;text-align:right;border-style:solid;">-12 177</td>
+        <td style="background-color:darkgrey;color:white;text-align:right;border-style:solid;">7 481</td>
+        <td style="background-color:darkgrey;color:white;text-align:right;border-style:solid;">-3 658</td>
+        <td style="background-color:darkgrey;color:white;;border-style:solid;"></td>
+        <td style="background-color:darkgrey;color:white;;border-style:solid;"></td>
+    </tr>
+</table>
+</body>
+<script> 
+function MyOnLoadFunction() {
+}
+</script> 
+</html>

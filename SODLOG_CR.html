@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+<title>CR Previsionnel</title>
+<link rel="icon" type="image/png" href="icon-idee.png" />
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+h2 {
+  margin-left: 20px;
+  line-height:20px;
+}
+h3 {
+  margin-left: 40px;
+  line-height:20px;
+}
+h4 {
+  margin-left: 60px;
+  line-height:16px;
+}
+h5 {
+  margin-left: 100px;
+  line-height:14px;
+}
+h6 {
+  margin-left: 120px;
+  line-height:12px;
+}
+</style>
+</head>
+<script> 
+function getParams() {
+    var idx = document.URL.indexOf('?');
+    var params = new Array();
+    if (idx != -1) {
+        var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+        for (var i=0; i<pairs.length; i++) {
+            nameVal = pairs[i].split('=');
+            params[nameVal[0]] = nameVal[1];
+        }
+    }
+    return params;
+}
+</script> 
+
+<button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
+<button                 onclick="history.back()">Back to Previous Page</button>
+<body onload="MyOnLoadFunction();" style="background-color:white;">
+<h1> Date=2025.06 - Generated: Tue Sep 23 06:57:29 CEST 2025 </h1>
+<p> </p>
+<p> Par centres </p>
+<table   style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="background-color:black;color:white;border-style:solid;">Centre</td>
+        <td style="background-color:black;color:white;border-style:solid;">Situation</td>
+        <td style="background-color:black;color:white;border-style:solid;">Extrapolee</td>
+        <td style="background-color:black;color:white;border-style:solid;">Modifiee</td>
+        <td style="background-color:black;color:white;border-style:solid;">Cloture 2024</td>
+    </tr>
+</table>
+<p> Par comptes </p>
+<table   style="border-style:solid;">
+    <tr style="border-style:solid;">
+        <td style="background-color:black;color:white;border-style:solid;">Compte</td>
+        <td style="background-color:black;color:white;border-style:solid;">Description</td>
+        <td style="background-color:black;color:white;border-style:solid;">Centre</td>
+        <td style="background-color:black;color:white;border-style:solid;">Situation</td>
+        <td style="background-color:black;color:white;border-style:solid;">Extrapolee</td>
+        <td style="background-color:black;color:white;border-style:solid;">Modifiee</td>
+        <td style="background-color:black;color:white;border-style:solid;">Cloture 2024</td>
+        <td style="background-color:black;color:white;border-style:solid;">Extrapolation</td>
+        <td style="background-color:black;color:white;border-style:solid;">Commentaire</td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">Date</td>
+        <td style="border-style:solid;"></td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">2025.06</td>
+        <td style="text-align:right;border-style:solid;">2025.12</td>
+        <td style="text-align:right;border-style:solid;">2025.12</td>
+        <td style="text-align:right;border-style:solid;">2024.12</td>
+        <td style="border-style:solid;"></td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">60210001</td>
+        <td style="border-style:solid;">Achat pneus Tracteurs</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-1 516</td>
+        <td style="text-align:right;border-style:solid;">-10 220</td>
+        <td style="text-align:right;border-style:solid;">-10 220</td>
+        <td style="text-align:right;border-style:solid;">-10 220</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">60210002</td>
+        <td style="border-style:solid;">Achat pneus Semi Remorques</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-6 283</td>
+        <td style="text-align:right;border-style:solid;">-6 283</td>
+        <td style="text-align:right;border-style:solid;">-6 283</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">60220000</td>
+        <td style="border-style:solid;">Achat carburant</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-95 027</td>
+        <td style="text-align:right;border-style:solid;">-264 682</td>
+        <td style="text-align:right;border-style:solid;">-264 682</td>
+        <td style="text-align:right;border-style:solid;">-264 682</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">60223000</td>
+        <td style="border-style:solid;">Fournitures Bouteille de Gaz</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-394</td>
+        <td style="text-align:right;border-style:solid;">-920</td>
+        <td style="text-align:right;border-style:solid;">-920</td>
+        <td style="text-align:right;border-style:solid;">-920</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">60225000</td>
+        <td style="border-style:solid;">Fourniture de bureau</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-285</td>
+        <td style="text-align:right;border-style:solid;">-1 216</td>
+        <td style="text-align:right;border-style:solid;">-1 216</td>
+        <td style="text-align:right;border-style:solid;">-1 216</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">60300000</td>
+        <td style="border-style:solid;">Variations des stocks (approv)</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-2 460</td>
+        <td style="text-align:right;border-style:solid;">-2 460</td>
+        <td style="text-align:right;border-style:solid;">-2 460</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">60310000</td>
+        <td style="border-style:solid;">Variation stocks matières</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">14 312</td>
+        <td style="text-align:right;border-style:solid;">14 312</td>
+        <td style="text-align:right;border-style:solid;">14 312</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">60400000</td>
+        <td style="border-style:solid;">Sous traitance transport</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-211 838</td>
+        <td style="text-align:right;border-style:solid;">-211 838</td>
+        <td style="text-align:right;border-style:solid;">-211 838</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">60630000</td>
+        <td style="border-style:solid;">Fournit entretien petit équipt</td>
+        <td style="border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">-263</td>
+        <td style="text-align:right;border-style:solid;">-291</td>
+        <td style="text-align:right;border-style:solid;">-291</td>
+        <td style="text-align:right;border-style:solid;">-291</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61100000</td>
+        <td style="border-style:solid;">RF DE SOD SA</td>
+        <td style="border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">-6 160</td>
+        <td style="text-align:right;border-style:solid;">-22 712</td>
+        <td style="text-align:right;border-style:solid;">-22 712</td>
+        <td style="text-align:right;border-style:solid;">-22 712</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61110000</td>
+        <td style="border-style:solid;">Indemnites d'exploitation</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-4 996</td>
+        <td style="text-align:right;border-style:solid;">-15 166</td>
+        <td style="text-align:right;border-style:solid;">-15 166</td>
+        <td style="text-align:right;border-style:solid;">-15 166</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61300000</td>
+        <td style="border-style:solid;">Locations Porteur</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-18 000</td>
+        <td style="text-align:right;border-style:solid;">-36 000</td>
+        <td style="text-align:right;border-style:solid;">-36 000</td>
+        <td style="text-align:right;border-style:solid;">-36 000</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61320000</td>
+        <td style="border-style:solid;">Locations immobilières</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-3 000</td>
+        <td style="text-align:right;border-style:solid;">-6 000</td>
+        <td style="text-align:right;border-style:solid;">-6 000</td>
+        <td style="text-align:right;border-style:solid;">-6 000</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61350000</td>
+        <td style="border-style:solid;">Locations tracteur</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-791</td>
+        <td style="text-align:right;border-style:solid;">-791</td>
+        <td style="text-align:right;border-style:solid;">-791</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61350001</td>
+        <td style="border-style:solid;">Location semi</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-40 200</td>
+        <td style="text-align:right;border-style:solid;">-65 200</td>
+        <td style="text-align:right;border-style:solid;">-65 200</td>
+        <td style="text-align:right;border-style:solid;">-65 200</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61350002</td>
+        <td style="border-style:solid;">Autres locations</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-514</td>
+        <td style="text-align:right;border-style:solid;">-514</td>
+        <td style="text-align:right;border-style:solid;">-514</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61500001</td>
+        <td style="border-style:solid;">Entretien Réparation Tracteur</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-21 130</td>
+        <td style="text-align:right;border-style:solid;">-22 527</td>
+        <td style="text-align:right;border-style:solid;">-22 527</td>
+        <td style="text-align:right;border-style:solid;">-22 527</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61500002</td>
+        <td style="border-style:solid;">Entretien Répar Semi Remorques</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-3 981</td>
+        <td style="text-align:right;border-style:solid;">-3 981</td>
+        <td style="text-align:right;border-style:solid;">-3 981</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61520000</td>
+        <td style="border-style:solid;">Entretien s/ biens immobiliers</td>
+        <td style="border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">-2 365</td>
+        <td style="text-align:right;border-style:solid;">-10 999</td>
+        <td style="text-align:right;border-style:solid;">-10 999</td>
+        <td style="text-align:right;border-style:solid;">-10 999</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61550001</td>
+        <td style="border-style:solid;">Entretien Répar Pneu Tracteur</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-444</td>
+        <td style="text-align:right;border-style:solid;">-4 548</td>
+        <td style="text-align:right;border-style:solid;">-4 548</td>
+        <td style="text-align:right;border-style:solid;">-4 548</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61550002</td>
+        <td style="border-style:solid;">Réparation Pneus Semi Remorque</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-81</td>
+        <td style="text-align:right;border-style:solid;">-2 657</td>
+        <td style="text-align:right;border-style:solid;">-2 657</td>
+        <td style="text-align:right;border-style:solid;">-2 657</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61550003</td>
+        <td style="border-style:solid;">Controle technique Tracteur</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-357</td>
+        <td style="text-align:right;border-style:solid;">-716</td>
+        <td style="text-align:right;border-style:solid;">-716</td>
+        <td style="text-align:right;border-style:solid;">-716</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61550004</td>
+        <td style="border-style:solid;">Controle Technique Semi Remorq</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-166</td>
+        <td style="text-align:right;border-style:solid;">-357</td>
+        <td style="text-align:right;border-style:solid;">-357</td>
+        <td style="text-align:right;border-style:solid;">-357</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61560000</td>
+        <td style="border-style:solid;">Maintenance</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">10</td>
+        <td style="text-align:right;border-style:solid;">-156</td>
+        <td style="text-align:right;border-style:solid;">-156</td>
+        <td style="text-align:right;border-style:solid;">-156</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">61630000</td>
+        <td style="border-style:solid;">Assurance transport</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-14 894</td>
+        <td style="text-align:right;border-style:solid;">-32 599</td>
+        <td style="text-align:right;border-style:solid;">-32 599</td>
+        <td style="text-align:right;border-style:solid;">-32 599</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62260000</td>
+        <td style="border-style:solid;">Honoraires</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-1 680</td>
+        <td style="text-align:right;border-style:solid;">-4 145</td>
+        <td style="text-align:right;border-style:solid;">-4 145</td>
+        <td style="text-align:right;border-style:solid;">-4 145</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62270000</td>
+        <td style="border-style:solid;">Frais d'actes et contentieux</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-25</td>
+        <td style="text-align:right;border-style:solid;">-25</td>
+        <td style="text-align:right;border-style:solid;">-25</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62510000</td>
+        <td style="border-style:solid;">Voyages et déplacements</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-1 017</td>
+        <td style="text-align:right;border-style:solid;">-1 086</td>
+        <td style="text-align:right;border-style:solid;">-1 086</td>
+        <td style="text-align:right;border-style:solid;">-1 086</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62510001</td>
+        <td style="border-style:solid;">frais deplts chauffeurs</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-25 399</td>
+        <td style="text-align:right;border-style:solid;">-57 027</td>
+        <td style="text-align:right;border-style:solid;">-57 027</td>
+        <td style="text-align:right;border-style:solid;">-57 027</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62520000</td>
+        <td style="border-style:solid;">Autoroute</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-33 857</td>
+        <td style="text-align:right;border-style:solid;">-107 107</td>
+        <td style="text-align:right;border-style:solid;">-107 107</td>
+        <td style="text-align:right;border-style:solid;">-107 107</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62610000</td>
+        <td style="border-style:solid;">Frais de télécommunications</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-269</td>
+        <td style="text-align:right;border-style:solid;">-534</td>
+        <td style="text-align:right;border-style:solid;">-534</td>
+        <td style="text-align:right;border-style:solid;">-534</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62700000</td>
+        <td style="border-style:solid;">Services bancaires et assimilé</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-297</td>
+        <td style="text-align:right;border-style:solid;">-537</td>
+        <td style="text-align:right;border-style:solid;">-537</td>
+        <td style="text-align:right;border-style:solid;">-537</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">62810000</td>
+        <td style="border-style:solid;">Concours divers (cotisations.)</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-68</td>
+        <td style="text-align:right;border-style:solid;">-68</td>
+        <td style="text-align:right;border-style:solid;">-68</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">63120000</td>
+        <td style="border-style:solid;">Taxe d'apprentissage</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-1 722</td>
+        <td style="text-align:right;border-style:solid;">-3 571</td>
+        <td style="text-align:right;border-style:solid;">-3 571</td>
+        <td style="text-align:right;border-style:solid;">-3 571</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">63330000</td>
+        <td style="border-style:solid;">Format Professionnelle continu</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-7 577</td>
+        <td style="text-align:right;border-style:solid;">-10 852</td>
+        <td style="text-align:right;border-style:solid;">-10 852</td>
+        <td style="text-align:right;border-style:solid;">-10 852</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">63511001</td>
+        <td style="border-style:solid;">CVAE</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-666</td>
+        <td style="text-align:right;border-style:solid;">-2 606</td>
+        <td style="text-align:right;border-style:solid;">-2 606</td>
+        <td style="text-align:right;border-style:solid;">-2 606</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">63511002</td>
+        <td style="border-style:solid;">CFE</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-1 873</td>
+        <td style="text-align:right;border-style:solid;">-3 746</td>
+        <td style="text-align:right;border-style:solid;">-3 746</td>
+        <td style="text-align:right;border-style:solid;">-3 746</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">63780000</td>
+        <td style="border-style:solid;">Taxes diverses</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-3 564</td>
+        <td style="text-align:right;border-style:solid;">-3 564</td>
+        <td style="text-align:right;border-style:solid;">-3 564</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64110001</td>
+        <td style="border-style:solid;">Salaires Chauffeurs</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-296 386</td>
+        <td style="text-align:right;border-style:solid;">-638 947</td>
+        <td style="text-align:right;border-style:solid;">-638 947</td>
+        <td style="text-align:right;border-style:solid;">-638 947</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64110002</td>
+        <td style="border-style:solid;">Salaires Exploitation</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-6 659</td>
+        <td style="text-align:right;border-style:solid;">-2 050</td>
+        <td style="text-align:right;border-style:solid;">-2 050</td>
+        <td style="text-align:right;border-style:solid;">-2 050</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64120000</td>
+        <td style="border-style:solid;">Congés payés</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">35 438</td>
+        <td style="text-align:right;border-style:solid;">4 587</td>
+        <td style="text-align:right;border-style:solid;">4 587</td>
+        <td style="text-align:right;border-style:solid;">4 587</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64121000</td>
+        <td style="border-style:solid;">Caisse congés payés</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-2 692</td>
+        <td style="text-align:right;border-style:solid;">-3 160</td>
+        <td style="text-align:right;border-style:solid;">-3 160</td>
+        <td style="text-align:right;border-style:solid;">-3 160</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64140000</td>
+        <td style="border-style:solid;">Indemnités et avantages divers</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-2 296</td>
+        <td style="text-align:right;border-style:solid;">-2 296</td>
+        <td style="text-align:right;border-style:solid;">-2 296</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64510001</td>
+        <td style="border-style:solid;">Cot. URSSAF Chauffeurs</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-48 574</td>
+        <td style="text-align:right;border-style:solid;">-109 336</td>
+        <td style="text-align:right;border-style:solid;">-109 336</td>
+        <td style="text-align:right;border-style:solid;">-109 336</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64510002</td>
+        <td style="border-style:solid;">Cot. URSSAF Exploitation</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-1 801</td>
+        <td style="text-align:right;border-style:solid;">-589</td>
+        <td style="text-align:right;border-style:solid;">-589</td>
+        <td style="text-align:right;border-style:solid;">-589</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64520001</td>
+        <td style="border-style:solid;">Cotisations Mutuelle Chauffeur</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-3 198</td>
+        <td style="text-align:right;border-style:solid;">-6 849</td>
+        <td style="text-align:right;border-style:solid;">-6 849</td>
+        <td style="text-align:right;border-style:solid;">-6 849</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64520002</td>
+        <td style="border-style:solid;">Cotisations Mutuelle Exploitat</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-132</td>
+        <td style="text-align:right;border-style:solid;">-132</td>
+        <td style="text-align:right;border-style:solid;">-132</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64530001</td>
+        <td style="border-style:solid;">Cotisations Retraite chauffeur</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-9 053</td>
+        <td style="text-align:right;border-style:solid;">-20 029</td>
+        <td style="text-align:right;border-style:solid;">-20 029</td>
+        <td style="text-align:right;border-style:solid;">-20 029</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64530002</td>
+        <td style="border-style:solid;">cotisations Retraite Exploitat</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-400</td>
+        <td style="text-align:right;border-style:solid;">-122</td>
+        <td style="text-align:right;border-style:solid;">-122</td>
+        <td style="text-align:right;border-style:solid;">-122</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64540001</td>
+        <td style="border-style:solid;">Cotisations prevoy chauffeurs</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-5 693</td>
+        <td style="text-align:right;border-style:solid;">-12 830</td>
+        <td style="text-align:right;border-style:solid;">-12 830</td>
+        <td style="text-align:right;border-style:solid;">-12 830</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64540002</td>
+        <td style="border-style:solid;">Cotisations prevoy exploitatio</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-42</td>
+        <td style="text-align:right;border-style:solid;">-13</td>
+        <td style="text-align:right;border-style:solid;">-13</td>
+        <td style="text-align:right;border-style:solid;">-13</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64580000</td>
+        <td style="border-style:solid;">Cotisations autres organismes</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">9 915</td>
+        <td style="text-align:right;border-style:solid;">1 071</td>
+        <td style="text-align:right;border-style:solid;">1 071</td>
+        <td style="text-align:right;border-style:solid;">1 071</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64750000</td>
+        <td style="border-style:solid;">Médecine du travail pharmacie</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-2 182</td>
+        <td style="text-align:right;border-style:solid;">-2 044</td>
+        <td style="text-align:right;border-style:solid;">-2 044</td>
+        <td style="text-align:right;border-style:solid;">-2 044</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">64800000</td>
+        <td style="border-style:solid;">Autres charges de personnel</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-2 400</td>
+        <td style="text-align:right;border-style:solid;">-2 400</td>
+        <td style="text-align:right;border-style:solid;">-2 400</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">65800000</td>
+        <td style="border-style:solid;">Chge diverse gestion courante</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">-43</td>
+        <td style="text-align:right;border-style:solid;">-14</td>
+        <td style="text-align:right;border-style:solid;">-14</td>
+        <td style="text-align:right;border-style:solid;">-14</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">65820000</td>
+        <td style="border-style:solid;">>litiges sur Transports</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-8 295</td>
+        <td style="text-align:right;border-style:solid;">-2 580</td>
+        <td style="text-align:right;border-style:solid;">-2 580</td>
+        <td style="text-align:right;border-style:solid;">-2 580</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">66110000</td>
+        <td style="border-style:solid;">Intérêts des emprunts dettes</td>
+        <td style="border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-2 165</td>
+        <td style="text-align:right;border-style:solid;">-2 165</td>
+        <td style="text-align:right;border-style:solid;">-2 165</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">66117000</td>
+        <td style="border-style:solid;">Intérêt dette ratt à particip.</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">-1 168</td>
+        <td style="text-align:right;border-style:solid;">-1 168</td>
+        <td style="text-align:right;border-style:solid;">-1 168</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">67120000</td>
+        <td style="border-style:solid;">Pénalité amende fisc.pénalité</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-158</td>
+        <td style="text-align:right;border-style:solid;">-195</td>
+        <td style="text-align:right;border-style:solid;">-195</td>
+        <td style="text-align:right;border-style:solid;">-195</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">68110000</td>
+        <td style="border-style:solid;">Dot.amortimmob mat transport</td>
+        <td style="border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">-7 366</td>
+        <td style="text-align:right;border-style:solid;">-14 865</td>
+        <td style="text-align:right;border-style:solid;">-14 865</td>
+        <td style="text-align:right;border-style:solid;">-14 865</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">68110500</td>
+        <td style="border-style:solid;">dot amortimmob mat indust</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-1 405</td>
+        <td style="text-align:right;border-style:solid;">-4 113</td>
+        <td style="text-align:right;border-style:solid;">-4 113</td>
+        <td style="text-align:right;border-style:solid;">-4 113</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">68111000</td>
+        <td style="border-style:solid;">Dot.amort Immob incorporelles</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-963</td>
+        <td style="text-align:right;border-style:solid;">-1 943</td>
+        <td style="text-align:right;border-style:solid;">-1 943</td>
+        <td style="text-align:right;border-style:solid;">-1 943</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">68112000</td>
+        <td style="border-style:solid;">Dot. amort mat Cartier</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-28 563</td>
+        <td style="text-align:right;border-style:solid;">-57 600</td>
+        <td style="text-align:right;border-style:solid;">-57 600</td>
+        <td style="text-align:right;border-style:solid;">-57 600</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">68130000</td>
+        <td style="border-style:solid;">Dot amort Matériel de bureau</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">-124</td>
+        <td style="text-align:right;border-style:solid;">-135</td>
+        <td style="text-align:right;border-style:solid;">-135</td>
+        <td style="text-align:right;border-style:solid;">-135</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70600000</td>
+        <td style="border-style:solid;">Prest.Juridiques+Immob</td>
+        <td style="border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">29 739</td>
+        <td style="text-align:right;border-style:solid;">29 739</td>
+        <td style="text-align:right;border-style:solid;">29 739</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70600002</td>
+        <td style="border-style:solid;">Vente intracom exo tva</td>
+        <td style="border-style:solid;">Immobilier</td>
+        <td style="text-align:right;border-style:solid;">27 634</td>
+        <td style="text-align:right;border-style:solid;">66 089</td>
+        <td style="text-align:right;border-style:solid;">66 089</td>
+        <td style="text-align:right;border-style:solid;">66 089</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70600003</td>
+        <td style="border-style:solid;">Prestation de Transport</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">751 901</td>
+        <td style="text-align:right;border-style:solid;">1 512 713</td>
+        <td style="text-align:right;border-style:solid;">1 512 713</td>
+        <td style="text-align:right;border-style:solid;">1 512 713</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70600004</td>
+        <td style="border-style:solid;">REFAC LOC TRACTEUR</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">101 200</td>
+        <td style="text-align:right;border-style:solid;">101 200</td>
+        <td style="text-align:right;border-style:solid;">101 200</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70801000</td>
+        <td style="border-style:solid;">Vente Entretien Réparation</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">690</td>
+        <td style="text-align:right;border-style:solid;">460</td>
+        <td style="text-align:right;border-style:solid;">460</td>
+        <td style="text-align:right;border-style:solid;">460</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">70830000</td>
+        <td style="border-style:solid;">Locations diverses</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">2 628</td>
+        <td style="text-align:right;border-style:solid;">3 432</td>
+        <td style="text-align:right;border-style:solid;">3 432</td>
+        <td style="text-align:right;border-style:solid;">3 432</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">75800000</td>
+        <td style="border-style:solid;">Prodt divers gestion courante</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">3</td>
+        <td style="text-align:right;border-style:solid;">4</td>
+        <td style="text-align:right;border-style:solid;">4</td>
+        <td style="text-align:right;border-style:solid;">4</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">75871000</td>
+        <td style="border-style:solid;">rbt assurances</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">750</td>
+        <td style="text-align:right;border-style:solid;">750</td>
+        <td style="text-align:right;border-style:solid;">750</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">75872000</td>
+        <td style="border-style:solid;">RBt OPCO</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">1 367</td>
+        <td style="text-align:right;border-style:solid;">1 367</td>
+        <td style="text-align:right;border-style:solid;">1 367</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">76170000</td>
+        <td style="border-style:solid;">Revenus des créances rattaché</td>
+        <td style="border-style:solid;">Commun</td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">4 578</td>
+        <td style="text-align:right;border-style:solid;">4 578</td>
+        <td style="text-align:right;border-style:solid;">4 578</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">77500000</td>
+        <td style="border-style:solid;">Prodt cessions d'élts actifs</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">46 000</td>
+        <td style="text-align:right;border-style:solid;">46 000</td>
+        <td style="text-align:right;border-style:solid;">46 000</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">78725000</td>
+        <td style="border-style:solid;">Repr prov Amort dérogatoires</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">4 650</td>
+        <td style="text-align:right;border-style:solid;">9 773</td>
+        <td style="text-align:right;border-style:solid;">9 773</td>
+        <td style="text-align:right;border-style:solid;">9 773</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">79110000</td>
+        <td style="border-style:solid;">rbt assurance</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">13 446</td>
+        <td style="text-align:right;border-style:solid;">13 446</td>
+        <td style="text-align:right;border-style:solid;">13 446</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">79130000</td>
+        <td style="border-style:solid;">RBT OPCA</td>
+        <td style="border-style:solid;"></td>
+        <td style="text-align:right;border-style:solid;">0</td>
+        <td style="text-align:right;border-style:solid;">3 852</td>
+        <td style="text-align:right;border-style:solid;">3 852</td>
+        <td style="text-align:right;border-style:solid;">3 852</td>
+        <td style="border-style:solid;">Reconduit</td>
+        <td style="border-style:solid;"></td>
+    </tr>
+    <tr style="border-style:solid;">
+        <td style="background-color:darkgrey;color:white;;border-style:solid;">Resultat avant Impots</td>
+        <td style="background-color:darkgrey;color:white;;border-style:solid;"></td>
+        <td style="background-color:darkgrey;color:white;;border-style:solid;"></td>
+        <td style="background-color:darkgrey;color:white;text-align:right;border-style:solid;">124 744</td>
+        <td style="background-color:darkgrey;color:white;text-align:right;border-style:solid;">10 100</td>
+        <td style="background-color:darkgrey;color:white;text-align:right;border-style:solid;">10 100</td>
+        <td style="background-color:darkgrey;color:white;text-align:right;border-style:solid;">10 994</td>
+        <td style="background-color:darkgrey;color:white;;border-style:solid;"></td>
+        <td style="background-color:darkgrey;color:white;;border-style:solid;"></td>
+    </tr>
+</table>
+</body>
+<script> 
+function MyOnLoadFunction() {
+}
+</script> 
+</html>
