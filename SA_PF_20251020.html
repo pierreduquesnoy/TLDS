@@ -54,7 +54,7 @@ function getParams() {
 <button                 onclick="window.location.assign( 'Index.html' )">Back to Main Page</button>
 <button                 onclick="history.back()">Back to Previous Page</button>
 <body onload="MyOnLoadFunction();" style="background-color:white;">
-<h1> Date=2025.10.20 - Generated: Mon Oct 20 12:27:57 CEST 2025 </h1>
+<h1> Date=2025.10.20 - Generated: Tue Oct 21 07:55:38 CEST 2025 </h1>
 <p> </p>
 <a id="20/10/2025"> </a>
 <h3> Valorisation au 20/10/2025 </h3>
@@ -1486,9 +1486,9 @@ function getParams() {
         <td style="background-color:black;color:white;border-style:solid;">Cours (20/10)</td>
         <td style="background-color:black;color:white;border-style:solid;">+ Value(20/10)</td>
         <td style="background-color:black;color:white;border-style:solid;">- Value(20/10)</td>
-        <td style="background-color:black;color:white;border-style:solid;">Cours (20/10)</td>
-        <td style="background-color:black;color:white;border-style:solid;">+ Value(20/10)</td>
-        <td style="background-color:black;color:white;border-style:solid;">- Value(20/10)</td>
+        <td style="background-color:black;color:white;border-style:solid;">Cours (21/10)</td>
+        <td style="background-color:black;color:white;border-style:solid;">+ Value(21/10)</td>
+        <td style="background-color:black;color:white;border-style:solid;">- Value(21/10)</td>
     </tr>
     <tr style="border-style:solid;">
         <td style="background-color:grey;color:white;border-style:solid;">Position</td>
@@ -2605,22 +2605,22 @@ function getParams() {
     </tr>
     <tr style="border-style:solid;">
         <td style="border-style:solid;">2</td>
-        <td style="border-style:solid;">./workspace/ProcessValorisation.pl --valorisation=2025.10.20/Valorisation.SOD.2024.12.31.csv  > 2025.10.20/transactions.SOD.2024.12.31.txt</td>
+        <td style="border-style:solid;">./workspace/ProcessValorisation.pl --valorisation=2025.10.20/Valorisation.SOD.2024.12.31.csv --silent > 2025.10.20/transactions.SOD.2024.12.31.txt</td>
         <td style="border-style:solid;">0</td>
     </tr>
     <tr style="border-style:solid;">
         <td style="border-style:solid;">3</td>
-        <td style="border-style:solid;">~/bin/xlsx2csv.pl --date_type=EUROPEAN --input=2025.10.20/Archive/comptes\ 664-667-764-768-5903\ 20.10.25.xlsx  > 2025.10.20/Comptes.6670.7670.7640.5903.5187.csv</td>
+        <td style="border-style:solid;">~/bin/xlsx2csv.pl --date_type=EUROPEAN --input=2025.10.20/Archive/comptes\ 664-667-764-768-5903\ 20.10.25.xlsx --silent > 2025.10.20/Comptes.6670.7670.7640.5903.5187.csv</td>
         <td style="border-style:solid;">0</td>
     </tr>
     <tr style="border-style:solid;">
         <td style="border-style:solid;">4</td>
-        <td style="border-style:solid;">./workspace/ProcessCSV.pl --comptes=2025.10.20/Comptes.6670.7670.7640.5903.5187.csv  > 2025.10.20/PlusValues.SOD.2025.txt</td>
+        <td style="border-style:solid;">./workspace/ProcessCSV.pl --comptes=2025.10.20/Comptes.6670.7670.7640.5903.5187.csv --silent > 2025.10.20/PlusValues.SOD.2025.txt</td>
         <td style="border-style:solid;">0</td>
     </tr>
     <tr style="border-style:solid;">
         <td style="border-style:solid;">5</td>
-        <td style="border-style:solid;">./workspace/ProcessCSV.pl --comptes=2025.10.20/Comptes.6670.7670.7640.5903.5187.csv --comptes_pv  > 2025.10.20/comptes.pv.SOD.2025.10.20.txt</td>
+        <td style="border-style:solid;">./workspace/ProcessCSV.pl --comptes=2025.10.20/Comptes.6670.7670.7640.5903.5187.csv --comptes_pv --silent > 2025.10.20/comptes.pv.SOD.2025.10.20.txt</td>
         <td style="border-style:solid;">0</td>
     </tr>
     <tr style="border-style:solid;">
@@ -2630,32 +2630,27 @@ function getParams() {
     </tr>
     <tr style="border-style:solid;">
         <td style="border-style:solid;">7</td>
-        <td style="border-style:solid;">./workspace/ProcessCSV.pl --grandlivre=2025.10.20/GrandLivre.503.507.csv --portfolio_diff=2025.10.20/ValorisationDiff.SOD.2025.10.20.txt --pv_diff=2025.10.20/PlusValues.SOD.2025.txt  > 2025.10.20/transactions.SOD.2025.txt</td>
+        <td style="border-style:solid;">./workspace/ProcessCSV.pl --grandlivre=2025.10.20/GrandLivre.503.507.csv --portfolio_diff=2025.10.20/ValorisationDiff.SOD.2025.10.20.txt --pv_diff=2025.10.20/PlusValues.SOD.2025.txt --silent > 2025.10.20/transactions.SOD.2025.txt</td>
         <td style="border-style:solid;">0</td>
     </tr>
     <tr style="border-style:solid;">
         <td style="border-style:solid;">8</td>
-        <td style="border-style:solid;">./workspace/ProcessLots.pl --lots=2025.10.20/transactions.SOD.2024.12.31.txt,2025.10.20/transactions.SOD.2025.txt --valorisation=2025.10.20/Valorisation.SOD.2025.10.20.csv  > 2025.10.20/actions.SOD.2025.10.20.txt</td>
+        <td style="border-style:solid;">./workspace/ProcessLots.pl --lots=2025.10.20/transactions.SOD.2024.12.31.txt,2025.10.20/transactions.SOD.2025.txt --valorisation=2025.10.20/Valorisation.SOD.2025.10.20.csv --silent > 2025.10.20/actions.SOD.2025.10.20.txt</td>
         <td style="border-style:solid;">0</td>
     </tr>
     <tr style="border-style:solid;">
         <td style="border-style:solid;">9</td>
-        <td style="border-style:solid;">./workspace/ProcessValorisation.pl --valorisation=2025.10.20/Valorisation.SOD.2025.10.20.csv --actions=2025.10.20/actions.SOD.2025.10.20.txt  > 2025.10.20/transactions.SOD.2025.10.20.txt</td>
+        <td style="border-style:solid;">./workspace/ProcessValorisation.pl --valorisation=2025.10.20/Valorisation.SOD.2025.10.20.csv --actions=2025.10.20/actions.SOD.2025.10.20.txt --silent > 2025.10.20/transactions.SOD.2025.10.20.txt</td>
         <td style="border-style:solid;">0</td>
     </tr>
     <tr style="border-style:solid;">
         <td style="border-style:solid;">10</td>
-        <td style="border-style:solid;">./workspace/ProcessLots.pl --lots=2025.10.20/transactions.SOD.2024.12.31.txt,2025.10.20/transactions.SOD.2025.txt --valorisation=2025.10.20/Valorisation.SOD.2025.10.20.csv --pv_only  > 2025.10.20/portfolio.pv.SOD.2025.10.20.txt</td>
+        <td style="border-style:solid;">./workspace/ProcessLots.pl --lots=2025.10.20/transactions.SOD.2024.12.31.txt,2025.10.20/transactions.SOD.2025.txt --valorisation=2025.10.20/Valorisation.SOD.2025.10.20.csv --pv_only --silent > 2025.10.20/portfolio.pv.SOD.2025.10.20.txt</td>
         <td style="border-style:solid;">0</td>
     </tr>
     <tr style="border-style:solid;">
         <td style="border-style:solid;">11</td>
         <td style="border-style:solid;">./workspace/Compta.pl --realized=2025.10.20/comptes.pv.SOD.2025.10.20.txt --unrealized=2025.10.20/portfolio.pv.SOD.2025.10.20.txt > 2025.10.20/compta.SOD.2025.10.20.txt</td>
-        <td style="border-style:solid;">0</td>
-    </tr>
-    <tr style="border-style:solid;">
-        <td style="border-style:solid;">12</td>
-        <td style="border-style:solid;">./workspace/MakeHtml.pl </td>
         <td style="border-style:solid;">0</td>
     </tr>
 </table>
